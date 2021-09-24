@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>没想到TA被子里竟然...</title>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <script>
+  !function(a){var b,c;/Android (\d+\.\d+)/.test(navigator.userAgent)?(b=parseFloat(RegExp.$1),b>2.3?(c=parseInt(window.screen.width)/a,document.write('<meta name="viewport" content="width='+a+",minimum-scale="+c+",maximum-scale="+c+', target-densitydpi=device-dpi">')):document.write('<meta name="viewport" content="width='+a+',target-densitydpi=device-dpi">')):document.write('<meta name="viewport" content="width='+a+',user-scalable=no,target-densitydpi=device-dpi,minimal-ui,viewport-fit=cover">')}(750);
+  </script>
+  <link rel="stylesheet" href="css/index.css?v=2257">
+  <body>
+    <audio src="audio/keyboard_C96kbps.mp3" id="Jkeyboard" class="ado" loop="true"></audio>
+    <audio src="audio/game_C96kbps.mp3" id="Jwalk" class="ado" ></audio>
+    <!-- loading -->
+    <div class="page loading-wrap" id="Jloading">
+      <div class="p0-bg"><img class="no-click" src="images/p0.png" height="1206" width="750"></div>
+      <div class="loading-gif">
+        <img class="no-click" src="images/loading.gif" width="386" height="254">
+        <div class="loading-txt-wrap">
+          <div class="loading-txt" id="JloaddingTxt">0%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="con" id="Jcon">
+    </div>
+    <div class="pop" id="Jpop"></div>
+    <script type="text/template" id="Jtpl">
+      <!-- p1 表单页-->
+      <div class="page p1" id="Jp1">
+        <!-- <div class="p0-bg"><img class="no-click" src="images/p0.png" height="1206" width="750"></div> -->
+        <div class="p1-btn" id="Jp1Btn"><img class="no-click" src="images/p1-btn.png"></div>
+        <div class="form-bg">
+          <img class="no-click" src="images/form-bg.png" width="632" height="549">
+          <div class="p1-ipt-1"><input type="text" class="p1-ipt p1-ipt-left" placeholder="输入你的昵称" id="Jipt1"></div>
+          <div class="p1-ipt-2"><input type="text" class="p1-ipt p1-ipt-right" placeholder="输入TA的昵称" id="Jipt2"></div>
+        </div>
+      </div>
+      <!-- p2 打字页 -->
+      <div class="page p2" id="Jp2">
+        <div class="p2-txt-wrap" id="Jp2Txt"></div>
+      </div>
+      <!-- p3 房间 -->
+      <div class="page p3" id="Jp3">
+        <div class="p3-scroll" id="Jp3Scroll">
+          <div id="scroller">
+            <div class="room">
+              <img class="no-click room-bg" src="images/fix/room.jpg" height="1500" width="2144" >
+              <div class="p3-cover" id="Jcover">
+                <div class="room-hand"><img class="no-click" src="images/room-hand.png"></div>
+                <div class="room-tips"><img class="no-click" src="images/room-tips.png"></div>
+              </div>
+            </div>
+            <div class="room-hand-2"><img class="no-click" src="images/room-hand-2.png"></div>
+            <div class="room-click-area" id="JroomClick"></div>
+            <div class="room-say-2"><img class="no-click" src="images/room-say-2.png"></div>
+            <div class="room-say"><img class="no-click" src="images/room-say.png"></div>
+          </div>
+        </div>
+      </div>
+      <!-- p4 床 -->
+      <div class="page p4" id="Jp4">
+        <div class="p4-bg"><img class="no-click" src="images/fix/p4-bg.jpg" height="1500" width="750"></div>
+        <div class="p4-tips"><img class="no-click" src="images/p4-tips.png" height="151" width="211"></div>
+        <div class="p4-tips-2" id="Jp4Tips2"><img class="no-click" src="images/p4-tips-2.png" height="300" width="335" ></div>
+        <div class="layer-wrap" id="Jtarget">
+          <div class="p4-hand" id="Jp4Hand"><img class="no-click" src="images/room-hand.png"></div>
+          <div class="layer mark layer-1"></div>
+          <div class="layer mark layer-2"></div>
+          <div class="layer mark layer-3"></div>
+          <div class="layer mark layer-4"></div>
+          <div class="layer mark layer-5"></div>
+          <div class="layer mark layer-6"></div>
+          <div class="layer mark layer-7"></div>
+          <div class="layer mark layer-2"></div>
+          <div class="layer mark layer-3"></div>
+          <div class="layer mark layer-4"></div>
+          <div class="layer mark layer-5"></div>
+          <div class="layer mark layer-6"></div>
+          <div class="layer mark layer-7"></div>
+          <div class="layer mark layer-2"></div>
+          <div class="layer mark layer-3"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item" id="Jitem"><img class="no-click" id="JitemPic"></div>
+          <div class="tits-img excellent" id="Jexcellent"></div>
+          <div class="tits-img amazing" id="Jamazing"></div>
+          <div class="tits-img great" id="Jgreat"></div>
+          <div class="tits-img unbelievable" id="Junbelievable"></div>
+        </div>
+        <div class="p4-hand-2" id="Jp4Hand2"><img class="no-click" src="images/room-hand.png"></div>
+        <div class="time" id="Jtime">10:00</div>
+        <div class="replay" id="JrePlay">
+          <div class="replay-btn" id="JreplayBtn"><img src="images/p1-btn.png" width="214" height="100" class="no-click"></div>
+        </div>
+      </div>
+      <!-- p5 结果页 -->
+      <div class="page p5 " id="Jp5">
+        <div id="Jcan" class="p5-can">
+          <div class="p0-bg"><img class="no-click" src="images/p5/p5-bg.png" height="1206" width="750">
+            <img class="no-click qrcode">
+          </div>
+          <div class="p5-img-tit">
+            <img class="no-click" src="images/p5/p5-img-tit.png" width="750" height="340" >
+            <div class="big-name" id="JbigName"></div>
+          </div>
+          <div class="p5-bg">
+            <img class="no-click" src="images/p5/p5-bg.jpg" height="1206" width="750">
+          </div>
+          <div class="p5-layer-wrap">
+            <div class="p5-layer">
+              <img class="no-click" id="JbigItem"  height="1206" width="750">
+            </div>
+            <div class="p5-desc" id="Jp5Desc"></div>
+          </div>
+        </div>
+        <div class="p5-btn" id="Jp5Btn"></div>
+        <div class="arr-wrap">
+          <span class="arr"></span>
+          <span class="arr-txt">将TA的"丑事"<br/>公布于世!</span>
+        </div>
+      </div>
+    </script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/preloadjs-NEXT.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/index.js?v=2257"></script>
+  </body>
+  </html>

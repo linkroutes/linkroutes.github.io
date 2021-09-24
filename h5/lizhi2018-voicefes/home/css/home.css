@@ -1,0 +1,85 @@
+.p-home{background:url(../images/home/p-home.png)  no-repeat;}
+.home-arrow{height:57px;width:38px;background-position:0 0;}
+.idol3{height:180px;width:151px;background-position:0 -57px;}
+.idol1{height:177px;width:151px;background-position:0 -237px;}
+.idol7{height:176px;width:151px;background-position:0 -414px;}
+.idol2{height:180px;width:156px;background-position:0 -590px;}
+.idol6{height:176px;width:158px;background-position:0 -770px;}
+.idol5{height:179px;width:159px;background-position:0 -946px;}
+.idol4{height:179px;width:159px;background-position:0 -1125px;}
+.logo{height:91px;width:172px;background-position:0 -1304px;}
+.ani-right{height:144px;width:215px;background-position:0 -1395px;}
+.home-btn{height:92px;width:455px;background-position:0 -1539px;}
+.cartoon{height:89px;width:569px;background-position:0 -1631px;}
+.ani-left{height:539px;width:585px;background-position:0 -1720px;}
+.idol-bg{height:1331px;width:640px;background-position:0 -2259px;}
+
+
+.page-home .logo{left:54px;top:37px;}
+.idol-bg{top:362px;margin-bottom:45px;}
+.ani-left{top:191px;}
+.ani-right{top:111px;right:0;}
+.home-arrow{top:465px;left:50px;}
+.cartoon{bottom:80px;left:23px;}
+
+.arrowAni{-webkit-animation-name:arrowAni;}
+@-webkit-keyframes arrowAni
+{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0%,-40%,  0);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: translate3d(0%, 0%, 0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0%, 30%, 0);
+    }
+}
+
+.idol1{top:245px;left:150px;}
+.idol2{top:245px;right:150px;}
+.idol3,.idol4,.idol5{top:472px;}
+.idol3{left:62px;}
+.idol5{right:62px;}
+.idol6{top:700px;left:150px;}
+.idol7{top:700px;right:150px;}
+
+.home-btn{top:955px;}
+
+.voice{background:url(../images/common/voice.png)  no-repeat;}
+.voice3{height:37px;width:39px;background-position:0 0;}
+.voice4{height:37px;width:39px;background-position:0 -37px;}
+.voice1{height:37px;width:39px;background-position:0 -74px;}
+.voice2{height:37px;width:39px;background-position:0 -111px;}
+
+.ani-voice {
+    height: 37px;
+    width: 39px;
+    top:10px;
+    background: url(../images/common/voice.png) no-repeat;
+    animation: ani-voice 800ms steps(1) infinite;
+    -webkit-animation: ani-voice 800ms steps(1) infinite;
+}
+
+@-webkit-keyframes ani-voice {
+    0% {
+        background-position: 0 -74px;
+    }
+
+    25% {
+        background-position: 0 -111px;
+    }
+
+    50% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 74px;
+    }
+}

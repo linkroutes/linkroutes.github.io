@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="p-call" IsPhone="false" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="add1.png" LocationX="0" LocationY="0" />
+    <Sprite Path="call5.png" LocationX="0" LocationY="59" />
+    <Sprite Path="call6.png" LocationX="0" LocationY="550" />
+    <Sprite Path="call7.png" LocationX="0" LocationY="1041" />
+    <Sprite Path="call4.png" LocationX="0" LocationY="1532" />
+    <Sprite Path="call1.png" LocationX="0" LocationY="2023" />
+    <Sprite Path="call2.png" LocationX="0" LocationY="2514" />
+    <Sprite Path="call3.png" LocationX="0" LocationY="3005" />
+    <Sprite Path="mask-con.png" LocationX="0" LocationY="3496" />
+    <Sprite Path="succ-call.png" LocationX="0" LocationY="4120" />
+  </SpriteList>
+</SpriteFile>

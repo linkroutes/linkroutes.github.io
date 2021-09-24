@@ -1,0 +1,726 @@
+html,
+body,
+* {
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  padding: 0;
+  margin: 0;
+}
+html,
+body{
+  width: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  -webkit-touch-callout: none;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+#view {
+  width: 16rem;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+}
+
+.fullpage {
+  width: 16rem;
+  height: 24rem;
+  overflow: hidden;
+}
+
+.abs {
+  position: absolute;
+}
+
+.abstl {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.abstr {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.absbl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.absbr {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*.link_btn{background: rgba(0,0,0,0.5)}*/
+
+/*------------------------公共按钮  默认为加号 -------------------------*/
+
+.public_btn {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0.65rem;
+  position: absolute;
+  /* z-index: 210; */
+}
+
+.public_btn > div {
+  width: 1.3rem;
+  height: 1.3rem;
+  /* background: #ff7103;*/
+  border-radius: 1.3rem;
+  padding: 0.2rem;
+}
+
+.public_btn span {
+  border-radius: 1.4rem;
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: block;
+  position: absolute;
+  background: url(images/plus_b.png) center center no-repeat;
+  background-size: 1.4rem 1.4rem !important;
+  -webkit-transition: all 0.3s;
+  background-size: 1.5rem;
+  /*border: solid #000 1px;*/
+  margin-left: -0.05rem;
+  margin-top: -0.05rem;
+}
+
+.public_btn.w span {
+  background: #fff url(images/plus_b.png) center center no-repeat;
+}
+
+.public_btn.rt1 {
+  right: 0;
+  top: 0;
+}
+
+.public_btn.rt2 {
+  right: 3rem;
+  top: 0;
+}
+
+.public_btn.rt3 {
+  right: 6rem;
+  top: 0;
+}
+
+.public_btn.hover span {
+  -webkit-animation: public_btn 0.3s;
+}
+
+/*.public_btn:hover{-webkit-animation:public_btn 0.2s ease;}*/
+
+/*大图按钮*/
+
+.bigImg_btn span {
+  background: url(images/bigImg_w.png) center center no-repeat;
+  background-size: 1.4rem 1.4rem !important;
+  margin-top: -0.05rem;
+  margin-left: -0.05rem;
+  /* border: solid #000 1px;*/
+}
+
+.bigImg_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/bigImg_b.png) center center no-repeat;
+}
+
+/*查看更多按钮*/
+
+.more_btn span {
+  background: rgba(0,0,0,0.95) url(images/more_w.png) center center no-repeat;
+}
+
+.more_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/more_b.png) center center no-repeat;
+}
+
+/*组图按钮*/
+
+.groupImage_btn span {
+  background: rgba(0,0,0,0.95)url(images/groupImage_w.png) center center no-repeat;
+}
+
+.groupImage_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/groupImage_b.png) center center no-repeat;
+  background-size: 1.25rem 1.25rem !important;
+}
+
+/*放大*/
+
+.magnify_btn span {
+  background: url(images/magnify_b.png) center center no-repeat;
+  background-size: 1.4rem 1.4rem !important;
+  margin-top: -0.05rem;
+  margin-left: -0.05rem;
+  /* border: solid #000 1px; */
+}
+
+.magnify_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/magnify_b.png) center center no-repeat;
+}
+
+/*文字按钮*/
+
+.text_btn span {
+  background: rgba(0,0,0,0.95) center center no-repeat;
+  color: #FFF;
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  height: 1rem;
+  width: 1rem;
+  padding: 0.15rem 0.15rem;
+}
+
+.text_btn.w span {
+  background: rgba(255,255,255,0.95) center center no-repeat;
+  color: #333;
+  font-size: 0.4rem;
+}
+
+/*音乐按钮*/
+
+.music_btn span {
+  background: rgba(0,0,0,0.95) url(images/music_w.png) center center no-repeat;
+  background-size: 1.4rem 1.4rem !important;
+}
+
+.music_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/music_b.png) center center no-repeat;
+}
+
+/*超链接按钮*/
+
+.link_btn span {
+  background: rgba(0,0,0,0.95) url(images/link_w.png) center center no-repeat;
+}
+
+.link_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/link_b.png) center center no-repeat;
+}
+
+/*平面图按钮*/
+
+.plan_btn span {
+  background: rgba(0,0,0,0.95) url(images/plan_w.png) center center no-repeat;
+}
+
+.plan_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/plan_b.png) center center no-repeat;
+}
+
+/*问题按钮*/
+
+.question_btn span {
+  background: rgba(0,0,0,0.95) url(images/question_w.png) center center no-repeat;
+}
+
+.question_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/question_b.png) center center no-repeat;
+}
+
+/*滑动按钮*/
+
+.glide_btn span {
+  background: rgba(0,0,0,0.95) url(images/question_w.png) center center no-repeat;
+}
+
+.glide_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/question_b.png) center center no-repeat;
+}
+
+/* 设计师按钮 */
+
+.btn_man span {
+  background-image: url("images/man.png");
+  /*background-position: 4px 4px;*/
+  background-size: 1.4rem 1.4rem !important;
+  /*background-color: #fff;*/
+  /*border: solid #000 1px;*/
+  margin-left: -0.05rem;
+  margin-top: -0.05rem;
+}
+
+/* 下载按钮 */
+
+.btn_download {
+  background-color: #FF7103;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 0.8rem;
+  position: relative;
+}
+
+.btn_download div {
+  background: #fff url("images/download.png") no-repeat 50% 50%;
+  background-size: 0.6rem auto;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: solid #000 0.05rem;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+}
+
+/* 问题按钮 */
+
+.btn_question span {
+  background-image: url("images/question.png");
+  background-position: 50% 50%;
+  background-size: 0.9rem 0.9rem !important;
+  background-color: #fff;
+  border: solid #000 0.05rem;
+  margin-left: -0.05rem;
+  margin-top: -0.05rem;
+}
+
+/*右*/
+
+.right_btn span {
+  background: rgba(0,0,0,0.6) url(images/right_w.png) center center no-repeat;
+  background-size: 0.7rem 1.15rem;
+}
+
+.right_btn.w span {
+  background: rgba(255,255,255,0.6) url(images/right_b.png) center center no-repeat;
+  background-size: 0.7rem 1.15rem;
+}
+
+/*左*/
+
+.left_btn span {
+  background: rgba(0,0,0,0.6) url(images/left_w.png) center center no-repeat;
+  background-size: 0.7rem 1.15rem;
+}
+
+.left_btn.w span {
+  background: rgba(255,255,255,0.6) url(images/left_b.png) center center no-repeat;
+  background-size: 0.7rem 1.15rem;
+}
+
+/*关闭按钮*/
+
+.close_btn span {
+  background: url(images/plus_b.png) center center no-repeat;
+  -webkit-transform: rotate(135deg);
+}
+
+.close_btn.w span {
+  background: rgba(255,255,255,0.95) url(images/plus_b.png) center center no-repeat;
+  -webkit-transform: rotate(135deg);
+}
+
+.public_btn span {
+  background-size: 1.4rem;
+}
+
+/*---------------------公共提示----------------------------*/
+
+.public_prompt {
+  display: block;
+  text-align: center;
+  padding: 0.1rem 0.25rem;
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  color: #FFF;
+  border-radius: 0.25rem;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.public_prompt.w {
+  background: rgba(255,255,255,0.8);
+  color: #000;
+}
+
+.public_prompt.rt1 {
+  right: 0.2rem;
+  top: 3rem;
+}
+
+.public_prompt.rt2 {
+  right: 3.25rem;
+  top: 3rem;
+}
+
+.public_prompt.rt3 {
+  right: 6.25rem;
+  top: 3rem;
+}
+
+.public_prompt span {
+  display: block;
+  width: 0;
+  position: absolute;
+  height: 0;
+  -webkit-animation: public_prompt_up 1.5s ease infinite;
+}
+
+.public_prompt.vertical {
+  width: 1em;
+  padding: 0.5rem 0.25rem;
+}
+
+.public_prompt.up span {
+  bottom: -0.25rem;
+  left: 50%;
+  margin-left: -0.25rem;
+  -webkit-animation: public_prompt_up 1.5s ease infinite;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+  border-top: 0.25rem solid rgba(0,0,0,0.8);
+}
+
+.public_prompt.dowm span {
+  top: -0.25rem;
+  left: 50%;
+  margin-left: -0.25rem;
+  -webkit-animation: public_prompt_dowm 1.5s ease infinite;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+  border-bottom: 0.25rem solid rgba(0,0,0,0.8);
+}
+
+.public_prompt.left span {
+  left: -0.25rem;
+  top: 50%;
+  margin-top: -0.25rem;
+  -webkit-animation: public_prompt_left 1.5s ease infinite;
+  border-bottom: 0.25rem solid transparent;
+  border-top: 0.25rem solid transparent;
+  border-right: 0.25rem solid rgba(0,0,0,0.8);
+}
+
+.public_prompt.right span {
+  right: -0.25rem;
+  top: 50%;
+  margin-top: -0.25rem;
+  -webkit-animation: public_prompt_right 1.5s ease infinite;
+  border-bottom: 0.25rem solid transparent;
+  border-top: 0.25rem solid transparent;
+  border-left: 0.25rem solid rgba(0,0,0,0.8);
+}
+
+.public_prompt.w.up span {
+  border-top: 0.25rem solid rgba(255,255,255,0.8);
+}
+
+.public_prompt.w.dowm span {
+  border-bottom: 0.25rem solid rgba(255,255,255,0.8);
+}
+
+.public_prompt.w.left span {
+  border-right: 0.25rem solid rgba(255,255,255,0.8);
+}
+
+.public_prompt.w.righ span {
+  border-left: 0.25rem solid rgba(255,255,255,0.8);
+}
+
+@-webkit-keyframes public_prompt_up {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0,0.25rem,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+
+@-webkit-keyframes public_prompt_dowm {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0,-0.25rem,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+
+@-webkit-keyframes public_prompt_left {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(-0.25rem,0,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+
+@-webkit-keyframes public_prompt_right {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0.25rem,0,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+
+/*页码提示*/
+
+.public_pageNum {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  width: 1.5rem;
+  height: 1rem;
+}
+
+.public_pageNum.hor {
+  -webkit-transform: rotate(-90deg);
+  bottom: 0.5rem;
+  right: 0.25rem;
+}
+
+.public_pageNum > span:nth-child(1) {
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1rem;
+  background: url(images/pageNum.png) -1.5rem 0 no-repeat,url(images/pageNum.png) -1.5rem 0.5rem no-repeat;
+  background-size: 3rem;
+  opacity: 0.5;
+}
+
+.public_pageNum > span:nth-child(2) {
+  position: absolute;
+  display: block;
+  width: 1.5rem;
+  height: 1rem;
+  background: url(images/pageNum.png) -1.5rem 0 no-repeat;
+  background-size: 3rem;
+  -webkit-animation: pageNum 1.5s infinite;
+}
+
+.public_pageNum.white > span:nth-child(1) {
+  background: url(images/pageNum.png) 0 0 no-repeat,url(images/pageNum.png) 0 0.5rem no-repeat;
+  background-size: 3rem;
+}
+
+.public_pageNum.white > span:nth-child(2) {
+  background: url(images/pageNum.png) 0 0 no-repeat;
+  background-size: 3rem;
+}
+
+@-webkit-keyframes pageNum {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 0;
+  }
+
+  1% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+
+  49% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translate3d(0,0.5rem,0);
+    opacity: 0;
+  }
+
+  51% {
+    -webkit-transform: translate3d(0,0.5rem,0);
+    opacity: 1;
+  }
+
+  99% {
+    -webkit-transform: translate3d(0,0.5rem,0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0.5rem,0);
+    opacity: 0;
+  }
+}
+
+/*iscroll*/
+
+#scroll {
+  width: 100%;
+}
+
+#scroll > ul > li {
+  width: 100%;
+  height: 24rem;
+  position: relative;
+}
+
+#scroll > ul > li > img {
+  display: block;
+  width: 100%;
+}
+
+#scroll > ul > li {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: end;
+  -webkit-box-orient: horizontal;
+}
+
+#scroll > ul > li.center {
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+}
+
+#scroll > ul > li.top {
+  -webkit-box-align: start;
+  -webkit-box-orient: horizontal;
+}
+
+@media screen and (min-height:500px) {
+  .fullpage {
+    height: 28.4rem;
+  }
+
+  #scroll > ul > li {
+    height: 28.4rem;
+  }
+}
+
+.scroller {
+  width: 100%;
+}
+
+.scroller > img {
+  width: 100%;
+}
+
+/* public3.0 */
+
+/* button */
+
+.btnTag,
+.btnMagnify,
+.btnAudio,
+.btnQuestion,.btnBuy {
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1.5rem;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  -webkit-animation: public_btn 2s infinite;
+  -webkit-transition: -webkit-transform 300ms;
+}
+
+.btnTag {
+  background-image: url("images/plus_b.png");
+}
+
+.btnTag.btnClose {
+  -webkit-transform: rotate(45deg);
+}
+
+.btnMagnify {
+  background-image: url("images/magnify_b.png");
+}
+.btnBuy{
+  background-image: url("images/buy.png");
+  -webkit-animation: none;
+}
+.btnAudio {
+  background-image: url("images/music_w.png");
+}
+
+.btnQuestion,
+.btnVideo,
+.btnUser,
+.btnBigImg {
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  -webkit-animation: public_btn 2s infinite;
+  -webkit-transition: -webkit-transform 300ms;
+}
+
+.btnQuestion {
+  background-image: url("images/question_b.png");
+}
+
+.btnVideo {
+  background-image: url("images/btnVideo.png");
+}
+
+.btnUser {
+  background-image: url("images/man.png");
+}
+
+.btnBigImg {
+  background-image: url("images/bigImg_w.png");
+}
+
+.btnPre {
+  background: url("images/previous.png") center center no-repeat;
+  background-size: 1.5rem 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.btnNext {
+  background: url("images/next.png") center center no-repeat;
+  background-size: 1.5rem 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.scrollTips {
+  background: url("images/scrollTips.png") center center no-repeat;
+  background-size: 1.5rem 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@-webkit-keyframes public_btn {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

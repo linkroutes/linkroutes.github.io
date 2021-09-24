@@ -1,0 +1,37 @@
+﻿input, select {
+	padding: 5px 20px 5px 15px;
+	font-size:30px;color:#fff;
+	text-shadow: #0116a2 2px 2px 2px;
+	background: transparent;
+	-webkit-tap-highlight-color: rgba(255,0,0,0);
+	-webkit-appearance: none;
+	outline: none;
+	border: 1px solid #cccccc;
+	width: 274px;height: 53px;
+	margin-top:56px;
+	border: none;
+}
+
+select{
+	padding:2px 10px;
+	height:30px;
+	font-size:24px;line-height:24px;
+	text-align: center;
+	font-weight:bold;
+}
+
+#code{margin-top:-1px;height:51px;}
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color:#70706c;
+}
+
+textarea{
+	background: transparent;
+	-webkit-tap-highlight-color: rgba(255,0,0,0);
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+}
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="p-rank" IsPhone="false" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="five.png" LocationX="0" LocationY="0" />
+    <Sprite Path="six.png" LocationX="0" LocationY="41" />
+    <Sprite Path="seven.png" LocationX="0" LocationY="83" />
+    <Sprite Path="four.png" LocationX="0" LocationY="121" />
+    <Sprite Path="rank-imgbg.png" LocationX="0" LocationY="162" />
+    <Sprite Path="votebox.png" LocationX="0" LocationY="258" />
+    <Sprite Path="img.png" LocationX="0" LocationY="289" />
+    <Sprite Path="gold.png" LocationX="0" LocationY="422" />
+    <Sprite Path="silver.png" LocationX="0" LocationY="619" />
+    <Sprite Path="bronze.png" LocationX="0" LocationY="801" />
+    <Sprite Path="vote-btn.png" LocationX="0" LocationY="987" />
+    <Sprite Path="more-btn.png" LocationX="0" LocationY="1076" />
+    <Sprite Path="share-con.png" LocationX="0" LocationY="1162" />
+    <Sprite Path="rank-title.png" LocationX="0" LocationY="1666" />
+  </SpriteList>
+</SpriteFile>

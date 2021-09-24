@@ -1,0 +1,15 @@
+﻿.music {
+    width: 47px;
+    height: 47px;
+    top: 15px;
+    right: 15px;
+    z-index:1000;
+}
+
+.music.music-open {
+    background: url('../../assest/images/music_on.png');
+}
+
+.music.music-close {
+    background: url('../../assest/images/music_off.png');
+}

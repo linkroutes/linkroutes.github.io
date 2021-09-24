@@ -1,0 +1,77 @@
+.page-rank{
+  background: url(../images/rank/bg.jpg);
+  background-size:100% 100%;
+}
+
+.p-rank{background:url(../images/rank/p-rank.png)  no-repeat;}
+.five{height:41px;width:19px;background-position:0 0;}
+.six{height:42px;width:21px;background-position:0 -41px;}
+.seven{height:38px;width:21px;background-position:0 -83px;}
+.four{height:41px;width:22px;background-position:0 -121px;}
+.rank-imgbg{height:96px;width:96px;background-position:0 -162px;}
+.votebox{height:31px;width:103px;background-position:0 -258px;}
+.img{height:133px;width:133px;background-position:0 -289px;}
+.gold{height:197px;width:142px;background-position:0 -422px;}
+.silver{height:182px;width:166px;background-position:0 -619px;}
+.bronze{height:186px;width:173px;background-position:0 -801px;}
+.vote-btn{height:89px;width:240px;background-position:0 -987px;}
+.more-btn{height:86px;width:244px;background-position:0 -1076px;}
+.share-con{height:504px;width:337px;background-position:0 -1162px;}
+.rank-title{height:97px;width:519px;background-position:0 -1666px;}
+
+.rank-title{top:56px;}
+.gold{top:160px;}
+.silver{left:20px;top:218px;}
+.bronze{right:20px;top:213px;}
+
+.page-rank img{
+	width:133px;height:133px;
+	border-radius: 50%;
+	position:absolute;
+	left:0;right:0;margin:auto;
+}
+.gold img{top:60px;}
+.silver img{
+	transform:rotate(-30deg);
+	-webkit-transform:rotate(-30deg); 
+	top:45px;left:23px;
+}
+.bronze img{
+	transform:rotate(30deg);
+	-webkit-transform:rotate(30deg); 
+	top:48px;right:31px;
+}
+
+.itembox{
+	width:80%;height:490px;
+	top:460px;
+}
+
+.item{
+	height:122px;position:relative;
+	border-bottom:1px solid #2af3fe;
+}
+
+.rank-imgbg{left:50px;}
+.votebox{right:15px;}
+
+.rank-imgbg img{
+	position:absolute;top:0;bottom:0;margin:auto;
+	transform:scale(0.67);
+	-webkit-transform:scale(0.67);
+	left:-18px;
+}
+
+.more-btn{left:47px;top:990px;}
+.vote-btn{right:47px;top:990px;}
+
+.gold .votebox,.silver .votebox,.bronze .votebox{bottom:-35px;}
+
+.votebox p{
+	color:#e52343;font-size:18px;
+	font-weight:600;line-height:31px;
+	text-align:center;
+	text-shadow: #f5a98b 1px 1px 1px;
+}
+
+.share-con{left:216px;top:222px;}

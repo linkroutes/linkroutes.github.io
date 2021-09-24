@@ -1,0 +1,32 @@
+.swiper-container{width:100%;height:930px;}
+
+.p-idol{background:url(../images/idol/p-idol.png)  no-repeat;}
+.meet-btn{height:86px;width:226px;background-position:0 0;}
+.play-btn{height:86px;width:231px;background-position:0 -86px;}
+.idol-img6{height:930px;width:640px;background-position:0 -172px;}
+.idol-img7{height:930px;width:640px;background-position:0 -1102px;}
+.idol-img1{height:930px;width:640px;background-position:0 -2032px;}
+.idol-img3{height:930px;width:640px;background-position:0 -2962px;}
+.idol-img2{height:930px;width:640px;background-position:0 -3892px;}
+.idol-img5{height:930px;width:640px;background-position:0 -4822px;}
+.idol-img4{height:930px;width:640px;background-position:0 -5752px;}
+
+.swiper-arrow{width:41px;height:42px;top:580px}
+.left-arrow{background:url(../images/common/left-arrow.png);}
+.right-arrow{background:url(../images/common/right-arrow.png);}
+
+.play-btn{top:965px;left:56px;}
+.meet-btn{top:965px;right:56px;}
+.idol{
+	z-index:10;
+	/* animation: shadow .5s linear infinite; */
+	/* -webkit-animation:shadow .5s linear infinite; */
+}
+@keyframes shadow {
+	0%, 100% {transform: scaleY(1);}
+	50% {transform: scaleY(1.2);}
+}
+@-webkit-keyframes shadow {
+  0%, 100% {-webkit-transform: scaleY(1);}
+  50% {-webkit-ttransform: scaleY(1.2);}
+}

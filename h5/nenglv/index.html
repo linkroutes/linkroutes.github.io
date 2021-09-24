@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link href="base/public4.css" rel="stylesheet" type="text/css" />
+    <link href="base/style.css" rel="stylesheet" type="text/css" />
+    <title>测测你是几分好男人</title>
+    <script>
+    ;
+    (function() {
+        var html = document.querySelector("html");
+        var rem = html.offsetWidth / 16;
+        html.style.fontSize = rem + "px";
+    })();
+    </script>
+</head>
+
+<body>
+    <div id="view">
+        <div id="loading" class="page">
+            <div class="loading-logo"></div>
+            <div class="loading-pic">
+                <div class="loading-text"><span>0</span>%</div>
+            </div>
+        </div>
+        <div id="content" class="page">
+            <div id="homePage" class="page">
+                <div class="loading-logo"></div>
+                <div class="page1">
+                    <div id="gameStart"></div>
+                    <div class="gameStart-tips"></div>
+                </div>
+            </div>
+            <div id="game" class="page">
+                <ul class="dialog1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="dialog2">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="dialog3">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="stay1"></div>
+                <div class="stay2"></div>
+                <div id="questionBg">
+                    <div id="question"></div>
+                    <ul id="option">
+                        <li id="optionA" class="optionAB" data-num="0"><span class="optionAText"></span></li>
+                        <li id="optionB" class="optionAB" data-num="1"><span class="optionBText"></span></li>
+                    </ul>
+                    <div id="surplus">(1/10)</div><!-- 剩余 -->
+                </div>
+                <div id="resultBg">
+                    <div id="result">
+                        <div class="score"></div>
+                    </div>
+                    <div id="analysisBtn"></div>
+                    <span class="analysisTips analysisTips1"></span>
+                    <span class="analysisTips analysisTips2"></span>
+                    <div id="restart"></div>
+                    <span class="analysisTips analysisTips3"></span>
+                    <div id="getTipsBtn"></div>
+                    <div id="shareBtn" class="shareBtn"></div>
+                </div>
+                <div id="getTips" class="page">
+                    <div class="getTips_img">
+                        <div id="learnMoreBtn"><span></span></div>
+                        <div id="getTips_close"></div>
+                        <div class="shareBtn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-top"></div>
+            <div id="analysis" class="page">
+                <div class="analysisBg">
+                    <div><img src="images/analysis.png" width="100%"></div>
+                    <span id="analysis_close"></span>
+                </div>
+            </div>
+            <div id="shop" class="page">
+                <div class="shopBg">
+                    <span id="shop_close"></span>
+                    <ul class="shopLink">
+                        <li class="link" data-num="0"></li>
+                        <li class="link" data-num="1"></li>
+                        <li class="link" data-num="2"></li>
+                        <li class="link" data-num="3"></li>
+                        <li class="link" data-num="4"></li>
+                        <li class="link" data-num="5"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="share" class="page">
+                <div class="shareBg">
+                </div>
+            </div>
+        </div>
+        <div id="musicPlayer"></div>
+    </div>
+</body>
+<script src="base/zepto_modify.js"></script>
+<script src="base/magazine.js"></script>
+<script src="base/preloadjs-0.6.2.min.js"></script>
+<script src="base/bgmusic.js"></script>
+<script>
+var shareScore = 0;
+$(document).ready(function() {
+    // _czc.push(﻿["_trackEvent","能率171023","进入页面"]);
+    var list=[
+        {src:"images/lmt.png"},
+        {src:"images/loading.png"},
+        {src:"images/logo.png"},
+        {src:"images/p1.png"},
+        {src:"images/dialog1.png"},
+        {src:"images/dialog2.png"},
+        {src:"images/option1.png"},
+        {src:"images/option2.png"},
+        {src:"images/question.png"}
+    ]
+    var $loadingText=$(".loading-text>span");
+    var loader=new createjs.LoadQueue(false);
+    loader.on("progress",loaderProgress);
+    loader.on("complete",loaderComplete);
+    loader.loadManifest(list);
+    function loaderProgress(p){
+        var percent=parseInt(p.progress*100);
+        $loadingText.html(percent);
+        console.log(percent)
+    }
+    function loaderComplete(){
+        document.querySelector("#content").style.cssText+="display:block";
+        $("#homePage").addClass("show");
+        setTimeout(function(){
+            $(".gameStart-tips").addClass("anim");
+            $("#loading").hide();
+            Bgmusic = new Bgmusic({
+                musicSrc: '0.mp3',
+                musicBtnId: 'musicPlayer',
+            });
+        },500)
+    }
+    var $view = $("#view");
+    var $game = $("#game");
+    var score = 0;
+    var questionNum = 0;
+    var scoreArr = [1,0,0,1,1,1,1,1,0,1];
+    var choicdArr = [];
+    var linkArr = ["https://noritz.tmall.com/view_shop.htm?spm=a220m.1000858.0.0.63e43641IfK1UC&shop_id=70836639&rn=bf3f20b75a3e8dbd90bf45ae69925b00","https://noritzweimei.m.tmall.com/?shop_id=155420013","https://noritztj.tmall.com/shop/view_shop.htm?spm=a220m.1000862.1000730.2.433a8abb5H9k0r&user_number_id=919253705&rn=7d4d10138b614a46980d193987654b3e","http://pinpai.gome.com.cn/SI_131/index.html?intcmp=search--1","https://mall.jd.com/index-1000003904.html","http://shop.m.suning.com/30000007.html"]
+    $view.bind("touchend",function(e){
+        switch (e.target.id) {
+            case "gameStart":
+                e.stopPropagation();
+                $game.addClass("show");
+                dialog();
+                break;
+            case "analysisBtn":
+                e.stopPropagation();
+                $("#analysis").addClass("show");
+                break;
+            case "analysis_close":
+                e.stopPropagation();
+                $("#analysis").removeClass("show");
+                break;
+            case "getTipsBtn":
+                e.stopPropagation();
+                $("#getTips").addClass("show");
+                $("#learnMoreBtn").addClass("show");
+                break;
+            case "getTips_close":
+                e.stopPropagation();
+                $("#getTips").removeClass("show");
+                break;
+            case "restart":
+                e.stopPropagation();
+                restart();
+                break;
+            case "learnMoreBtn":
+                e.stopPropagation();
+                $("#shop").addClass("show");
+                break;
+            case "shop_close":
+                e.stopPropagation();
+                $("#shop").removeClass("show");
+                break;
+            case "share":
+                e.stopPropagation();
+                $("#share").removeClass("show");
+                break;
+            default:
+                // statements_def
+                break;
+        }
+        if (e.target.classList.contains("optionAB")) {
+            e.stopPropagation();
+            var choicd = parseInt(e.target.getAttribute("data-num"));
+            $(e.target).addClass("choiced");
+            choicdArr.push(choicd);
+            if (scoreArr[questionNum] == choicdArr[questionNum]) {
+                score +=10;
+            }
+            questionNum +=1;
+            $(".optionAB").addClass("noEvent");
+            // console.log("score:"+score)
+            // console.log("choicdArr:"+choicdArr)
+            if (questionNum>9) {
+                // console.log(choicdArr);
+                // for(var i = 0; i<scoreArr.length; i++) {
+                //     if (scoreArr[i] == choicdArr[i]) {
+                //         score +=10;
+                //     }
+                // }
+                // console.log(score)
+                setTimeout(function(){
+                    $("#questionBg").removeClass("show");
+                    $("#resultBg").show();
+                    $(".score").html(score);
+                    if (score<56) {
+                        $("#result").css("background-image","url(images/result3.png)");
+                    }else if(score > 56 && score < 81){
+                        $("#result").css("background-image","url(images/result2.png)");
+                    }else {
+                        $("#result").css("background-image","url(images/result1.png)");
+                    }
+                },700)
+            }else{
+                setTimeout(function(){
+                    $("#surplus").html("("+(questionNum+1)+"/10)");
+                    $(".optionAB").removeClass("noEvent").removeClass("choiced");
+                    $("#question").css({"background-position-y":((-60/20)*questionNum)+"rem"});
+                    $(".optionAText").css({"background-position-y":((-90/20)*questionNum)+"rem"});
+                    $(".optionBText").css({"background-position-y":((-90/20)*questionNum)+"rem"});
+                },700)
+            }
+            data.desc= "事业优秀的你，对家人能做到几分呢？我拿到了"+score+"分，PK看看谁是better man！";
+            setShare();
+            // return shareScore = score;
+        }else if(e.target.classList.contains("shareBtn")){
+            e.stopPropagation();
+            $("#share").addClass("show");
+        }else if(e.target.classList.contains("link")){
+            e.stopPropagation();
+            var linkNum = parseInt(e.target.getAttribute("data-num"));
+            window.location.href=linkArr[linkNum]+"#custombrowser";
+        }
+    })
+
+    function dialog(){
+        var dialog1 = 0;
+        var dialog2 = 0;
+        var dialog3 = 0;
+        var dialogTimer = setInterval(function(){
+            dialog1 +=1;
+            $(".dialog1>li:nth-child("+dialog1+")").show();
+            if (dialog1 > 5) {
+                dialog3 +=1;
+                $(".dialog3>li:nth-child("+dialog3+")").show();
+            }
+            if (dialog3 > 2) {
+                dialog2 +=1;
+                $(".dialog2>li:nth-child("+dialog2+")").show();
+            }
+            if (dialog2 > 15){
+                clearInterval(dialogTimer);
+                $(".stay1").show();
+                $(".dialog1").hide();
+                $(".dialog2").hide();
+                $(".dialog3").hide();
+                setTimeout(function(){
+                    $(".stay2").show();
+                    setTimeout(function(){
+                        $("#questionBg").addClass("show");
+                    },100)
+                },100)
+            }
+        }, 80)
+    }
+    function restart(){
+        $("#resultBg").hide();
+        score = 0;
+        choicdArr = [];
+        $("#question").css({"background-position-y": 0});
+        $(".optionAText").css({"background-position-y": 0});
+        $(".optionBText").css({"background-position-y": 0});
+        $("#surplus").html("(1/10)");
+        $(".optionAB").removeClass("noEvent").removeClass("choiced");
+        $("#questionBg").addClass("show");
+        questionNum = 0;
+    }
+});
+</script>
+<script src="base/wxApi.min.js"></script>
+<script src="base/t_share.js"></script>
+<script type="text/javascript" src="base/share.js"></script>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html id="Jroot">
+ <head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>你知道吗？你的声音藏着另一个陌生的你...</title>
+  <meta id="desc" name="description" content="Angel or Demon？不为人知的性格秘密" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <script>
+    !function(a){var b,c;/Android (\d+\.\d+)/.test(navigator.userAgent)?(b=parseFloat(RegExp.$1),b>2.3?(c=parseInt(window.screen.width)/a,document.write('<meta name="viewport" content="width='+a+",minimum-scale="+c+",maximum-scale="+c+', target-densitydpi=device-dpi">')):document.write('<meta name="viewport" content="width='+a+',target-densitydpi=device-dpi">')):document.write('<meta name="viewport" content="width='+a+',user-scalable=no,target-densitydpi=device-dpi,minimal-ui,viewport-fit=cover">')}(750);
+  </script>
+  <link rel="stylesheet" href="src/css/index.css" />
+ </head>
+ <body id="Jbody">
+  <div class="doc" id="Jdoc">
+    <audio id="Jaudio" class="audio" src="https://bizadv.lizhi.fm/festatic/city/2018/jiyin/00_00_10_00_00_23.mp3"></audio>
+    <audio id="Jmp3" class="audio"></audio>
+    <!-- p0 -->
+    <div class="page p0 loading" id="Jp0">
+      <div class="loading-block">
+        <div class="item cd"></div>
+        <div class="item dots"></div>
+        <div class="item light"></div>
+        <div class="item wave">
+          <div class="item wave2"></div>
+        </div>
+        <div class="item guys"></div>
+      </div>
+      <div class="loading-txt">
+        <p class="txt txt-1" id="Jtxt1">Angel or Demon？</p>
+        <p class="txt txt-2" id="Jtxt2">知道吗？</p>
+        <p class="txt txt-3" id="Jtxt3">你的声音，藏着另一个<br>陌生的你 </p>
+        <div id="JloadingTxt" class="loadingTxt">0%</div>
+      </div>
+      <div class="logo"></div>
+    </div>
+
+  </div>
+  <div class="bottom g-bottom" id="Jbottom">
+    <div class="bt-btn bt-btn-link" id="Jlink"></div>
+    <div class="bt-btn bt-btn-replay" id="Jreplay"></div>
+    <div class="bt-btn bt-btn-save" id="Jsave"></div>
+  </div>
+  <div class="pop" id="Jpop"></div>
+  <script type="text/template" id="Jtpl">
+    <!-- p1 -->
+    <div class="page p1" id="Jp1">
+      <div class="user-name">
+        昵称 : <input type="text" class="user-name-ipt" id="JuserName" placeholder="请输入一个名字">
+      </div>
+      <div class="gender-box">
+        <div class="gender male" id="Jmale" data-gender="1">
+          <span class="deco male-deco"></span>
+        </div>
+        <div class="gender female" id="Jfemale" data-gender="0">
+          <span class="deco female-deco"></span>
+        </div>
+      </div>
+
+      <div class="btn-fix btn0 " id="Jbtn0"></div>
+    </div>
+    <!-- /p1 -->
+
+    <!-- p2 -->
+    <div class="page p2" id="Jp2">
+      <div class="p2-con">
+        <div class="gramophone center">
+          <div class="dots"></div>
+          <div class="icon"></div>
+        </div>
+        <p class="desc-txt">听这10s音频，凭直觉选出你对该声音的第一感受</p>
+        <div class="feeling-box">
+          <ul class="feeling-list" id="JfeelingList">
+            <li class="feeling-itm" id="Jfeeling1" data-id="qingkuai">
+              <span class="feeling-txt">轻快</span>
+            </li>
+            <li class="feeling-itm" id="Jfeeling2" data-id="pibei">
+              <span class="feeling-txt">疲惫</span>
+            </li>
+            <li class="feeling-itm" id="Jfeeling3" data-id="shenqing">
+              <span class="feeling-txt">深情</span>
+            </li>
+            <li class="feeling-itm" id="Jfeeling4" data-id="jiaoqing">
+              <span class="feeling-txt">矫情</span>
+            </li>
+            <li class="feeling-itm" id="Jfeeling5" data-id="jiaolv">
+              <span class="feeling-txt">焦虑</span>
+            </li>
+            <li class="feeling-itm feeling-itm-long" id="Jfeeling6" data-id="haowubolan">
+              <span class="feeling-txt">内心毫无波澜</span>
+            </li>
+          </ul>
+        </div>
+        <div class="desc-txt-2">
+          <p class="txt" id="JplayTxt">还记得生命中，<br>那些平静而美好的时光吗？</p>
+        </div>
+        <div class="btn btn1 center" id="Jbtn1"></div>
+      </div>
+    </div>
+    <!-- /p2 -->
+
+    <!-- p3 -->
+    <div class="page p3" id="Jp3">
+        <div class="p2-con p3-con">
+          <div class="cd-player">
+            <div class="recorder-item dots"></div>
+            <div class="recorder-item guy"></div>
+            <div class="recorder-item cd-bar"></div>
+            <div class="recorder-item grass"></div>
+            <div class="recorder-item cd on paused"></div>
+            <div class="recorder-item recorder"></div>
+          </div>
+          <div class="p3-desc-txt p3-desc-txt1" id="Jtips0">
+            请说出你此时此刻的想法吧
+            <!-- <div class="record-deco">请说出你此时此刻的想法吧</div> -->
+          </div>
+          <div class="p3-desc-txt p3-desc-txt2">
+            <p class="txt txt1">录制内容参考</p>
+            <p class="txt txt2" id="Jdemo">你就在我眼前，对我微笑，一如当年</p>
+          </div>
+          <p class="btn-desc" id="Jtips">录一段不少于5秒的音频</p>
+          <div class="btn btn2 center" id="Jbtn2"></div>
+        </div>
+        <!-- analyze -->
+        <div class="analyze-pop" id="Janalyze">
+          <div class="analyze-con">
+            <div class="hourglass">
+              <div class="hourglass-inner"></div>
+            </div>
+            <p class="analyze-txt">
+              努力分析中 <i class="dot-i">.</i><i class="dot-i">.</i><i class="dot-i">.</i><i class="dot-i">.</i><i class="dot-i">.</i><i class="dot-i">.</i>
+            </p>
+          </div>
+        </div>
+        <!-- alert -->
+        <div class="alert" id="Jalert">
+          <div class="alert-con">
+            <div class="btn btn3 center" id="Jbtn3"></div>
+          </div>
+        </div>
+    </div>
+    <!-- /p3 -->
+
+    <!-- p4 -->
+    <div class="page p4" id="Jp4">
+      <div class="p4-user-desc">
+        <p class="txt txt-1">Hi，<span id="JuserName2">荔枝用户</span></p>
+        <p class="txt txt-2">声音里的另一个你：</p>
+      </div>
+      <div class="page-flex" id="JpageFlex">
+        <div class="p4-con">
+          <div class="guy-con">
+            <div class="guy-bg-con" id="JguyBg">
+              <div class="p4-guy " id="JguyPic"></div>
+            </div>
+          </div>
+          <div class="btn4" id="Jtype">用户类型</div>
+        </div>
+        <div class="p4-con-desc-wrap" id="JquotesCon">
+          <div class="p4-con-desc">
+            <div class="flex-box" id="Jtags">
+              <div class="tag">标签</div>
+              <div class="tag">标签</div>
+              <div class="tag">标签</div>
+              <div class="tag">标签</div>
+            </div>
+            <div id="Jquotes" class="quotes">
+              <div class="para">你其实并不内向，只是不想搭理那些不重要的人。</div>
+              <div class="para">你最近觉得孤独无助？想一想还有十几亿的细胞只为你一个人而活。</div>
+              <div class="para">人情冷暖正如花开花谢，不如将这种现象，想成一种必然的季节。</div>
+              <div class="para">人世间的事，没有野心就容易开心。——韩寒 《就这么漂来漂去》</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bt-logo"></div>
+        <div class="qrcode">
+          <img class="qrcode-img" id="Jqrcode">
+          <div class="qrcode-desc-txt" id="JqrcodeTxt">扫一扫，解读声音里另一个陌生的你</div>
+        </div>
+      </div>
+      <img id="Jbase64Img" class="base64Img">
+    </div>
+    <!-- /p4 -->
+  </script>
+  <script src="./src/js/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/html2canvas/0.5.0-alpha1/html2canvas.min.js"></script>
+  <script src="./src/js/preloadjs-NEXT.min.js"></script>
+  <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="./src/js/wx.js"></script>
+  <script src="./src/js/lib.js"></script>
+  <script src="./src/js/lz.js"></script>
+  <script src="./src/js/index.js"></script>
+ </body>
+</html>

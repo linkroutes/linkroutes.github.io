@@ -1,0 +1,12 @@
+.p-prize{background:url(../images/prize/p-prize.png)  no-repeat;}
+.open-btn{height:70px;width:214px;background-position:0 0;}
+.prize1{height:473px;width:389px;background-position:0 -70px;}
+.prize2{height:473px;width:389px;background-position:0 -543px;}
+.prize3{height:473px;width:389px;background-position:0 -1016px;}
+.bg1{height:1075px;width:640px;background-position:0 -1489px;}
+.bg2{height:1031px;width:640px;background-position:0 -2564px;}
+
+.bg1{bottom:0;}
+.open-btn{top:473px;}
+.bg2{top:50px;}
+.prize{top:290px;}

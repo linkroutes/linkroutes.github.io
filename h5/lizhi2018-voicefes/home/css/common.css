@@ -1,0 +1,49 @@
+.page{
+  background: url(../images/common/bg.jpg);
+  background-size:100% 100%;
+}
+
+.bg-zs {
+	width:640px;
+	height:740px;
+	background-size: 100% 100%;
+	background-image: url(../images/common/bg-zs.png);
+}
+
+.music{background:url(../images/common/music.png)  no-repeat;right:37px;top:25px;z-index:1000;-webkit-transform:scale(1);}
+.music-blue{background:url(../images/common/music-blue.png)  no-repeat;left:37px;top:25px;z-index:1000;-webkit-transform:scale(1);}
+.music-open,.music-open-blue{height:50px;width:51px;background-position:0 0;-webkit-animation:rotating 1.2s linear infinite;animation:rotating 1.2s linear infinite;}
+.music-close,.music-close-blue{height:50px;width:51px;background-position:0 -50px;opacity: 0.6;}
+@-webkit-keyframes rotating {
+	from{
+		-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+	from{
+		-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.load-con{
+	width:357px;height:78px;
+	background:url(../images/common/load-con.png);
+	top:45%
+}
+
+.page-load p{
+	text-align: center;
+	font-size:35px;color:#e9ca24;
+	font-weight:bold;
+	text-shadow: #6523d3 2px 2px 2px;
+}

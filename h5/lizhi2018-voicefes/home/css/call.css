@@ -1,0 +1,21 @@
+.page-call{
+  background: url(../images/call/bg.jpg);
+  background-size:100% 100%;
+}
+
+.p-call{background:url(../images/call/p-call.png)  no-repeat;}
+.add1{height:59px;width:123px;background-position:0 0;}
+.call5{height:491px;width:382px;background-position:0 -59px;}
+.call6{height:491px;width:382px;background-position:0 -550px;}
+.call7{height:491px;width:382px;background-position:0 -1041px;}
+.call4{height:491px;width:382px;background-position:0 -1532px;}
+.call1{height:491px;width:382px;background-position:0 -2023px;}
+.call2{height:491px;width:382px;background-position:0 -2514px;}
+.call3{height:491px;width:382px;background-position:0 -3005px;}
+.mask-con{height:624px;width:474px;background-position:0 -3496px;}
+.succ-call{height:111px;width:519px;background-position:0 -4120px;}
+
+.call{top:120px;}
+.succ-call{top:630px;left:25px;}
+.add1{top:865px;}
+.mask-con{top:-145px;}

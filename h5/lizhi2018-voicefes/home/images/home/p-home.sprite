@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="p-home" IsPhone="false" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="home-arrow.png" LocationX="0" LocationY="0" />
+    <Sprite Path="idol3.png" LocationX="0" LocationY="57" />
+    <Sprite Path="idol1.png" LocationX="0" LocationY="237" />
+    <Sprite Path="idol7.png" LocationX="0" LocationY="414" />
+    <Sprite Path="idol2.png" LocationX="0" LocationY="590" />
+    <Sprite Path="idol6.png" LocationX="0" LocationY="770" />
+    <Sprite Path="idol5.png" LocationX="0" LocationY="946" />
+    <Sprite Path="idol4.png" LocationX="0" LocationY="1125" />
+    <Sprite Path="logo.png" LocationX="0" LocationY="1304" />
+    <Sprite Path="ani-right.png" LocationX="0" LocationY="1395" />
+    <Sprite Path="home-btn.png" LocationX="0" LocationY="1539" />
+    <Sprite Path="cartoon.png" LocationX="0" LocationY="1631" />
+    <Sprite Path="ani-left.png" LocationX="0" LocationY="1720" />
+    <Sprite Path="idol-bg.png" LocationX="0" LocationY="2259" />
+  </SpriteList>
+</SpriteFile>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="p-idol" IsPhone="false" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="meet-btn.png" LocationX="0" LocationY="0" />
+    <Sprite Path="play-btn.png" LocationX="0" LocationY="86" />
+    <Sprite Path="idol-img6.png" LocationX="0" LocationY="172" />
+    <Sprite Path="idol-img7.png" LocationX="0" LocationY="1102" />
+    <Sprite Path="idol-img1.png" LocationX="0" LocationY="2032" />
+    <Sprite Path="idol-img3.png" LocationX="0" LocationY="2962" />
+    <Sprite Path="idol-img2.png" LocationX="0" LocationY="3892" />
+    <Sprite Path="idol-img5.png" LocationX="0" LocationY="4822" />
+    <Sprite Path="idol-img4.png" LocationX="0" LocationY="5752" />
+  </SpriteList>
+</SpriteFile>

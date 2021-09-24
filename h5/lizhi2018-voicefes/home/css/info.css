@@ -1,0 +1,25 @@
+.page-info{
+  background: url(../images/info/bg.jpg);
+  background-size:100% 100%;
+}
+
+.p-info{background:url(../images/info/p-info.png)  no-repeat;}
+.submit-btn{height:87px;width:277px;background-position:0 0;}
+.info-phone{height:120px;width:309px;background-position:0 -87px;}
+.info-name{height:120px;width:309px;background-position:0 -207px;}
+.info-code{height:60px;width:309px;background-position:0 -327px;}
+.info-bg{height:708px;width:495px;background-position:0 -387px;}
+
+.info-bg{top:140px;}
+.info-name{top:198px;}
+.info-phone{top:342px;}
+.info-code{top:485px;}
+.submit-btn{top:582px;}
+
+.codebox{width:120px;height:60px;right:0;}
+.info-code p{
+	text-align: center; color: #fff; 
+	line-height: 60px; font-size: 28px; 
+	font-family: "Arial";
+	text-shadow: #0116a2 2px 2px 2px;
+}
