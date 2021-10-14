@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
   <title>首页</title>
   <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.min.js"></script>
+  <script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
 </head>
+
 <body>
   <div id="app">
-    <p> hello world!</p>
+    <p> hello world</p>
     <ul v-if="false">
       <li v-for="(item,index) of arr">
         <a :href="item.html_url">{{item.name}}</a>
@@ -18,23 +21,98 @@
     </ul>
   </div>
   <script>
-    new Vue({
-      el:'#app',
-      data:{
-        arr:[]
+    const win = window;
+    const APP = new Vue({
+      el: '#app',
+      data: {
+        root: 'https://t-csbj.linkroutes.com/api/',
+        signature: 'wx/signature',
+        shareData: { // 分享数据
+          title: '分享标题',
+          desc: '分享描述',
+          link: location.href,
+          imgUrl: 'https://www1.pcbaby.com.cn/test/gz/project/img/20210611/cover.jpg'
+        },
+        arr: []
       },
-      mounted(){
-        axios({
-          url:'https://api.github.com/users/linkroutes/repos',
-        }).then((data)=>{
-          let rawData = data.data;
-          console.log(rawData);
-          this.arr = rawData
-        }).catch((err)=>{
-          console.log(err);
-        })
+      mounted() {
+        this.setShare()
+      },
+      methods:{
+        registerWx(data, cb) {
+          if (win.wx) {
+            win.wx.config({
+              debug: false,
+              appId: data.appId,
+              timestamp: data.timestamp,
+              nonceStr: data.nonceStr,
+              signature: data.signature,
+              jsApiList: [
+                'checkJsApi',
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+              ]
+            });
+            win.wx.ready(() => {
+              win.wx.onMenuShareAppMessage(this.shareData);
+              win.wx.onMenuShareTimeline(this.shareData);
+              cb && cb()
+            });
+            win.wx.error((res) => {
+              console.log(res.errMsg);
+            });
+          }
+        },
+        setShare() {
+          axios({
+            method: 'post',
+            url: this.root + this.signature,
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            transformRequest: [(data) => {
+              data = this.stringify(data)
+              return data
+            }],
+            data: {
+              url: encodeURIComponent(location.href.split('#')[0]),
+            }
+          }).then((data) => {
+            let rawData = data.data,
+              code = rawData.code,
+              res = rawData.data;
+            if (!code) {
+              this.registerWx(res, () => {
+                // ..
+              })
+            } else {
+              console.log(rawData);
+            }
+          }).catch((err) => {
+            console.log(err);
+          })
+        },
+        stringify(obj, sep, eq) {
+          sep = sep || '&';
+          eq = eq || '=';
+          let str = "";
+          for(let k in obj) {
+            str += k + eq + unescape(obj[k]) + sep
+          }
+          return str.slice(0, -1)
+        },
+        parse(str) {
+          let obj = new Object();
+          strs = str.split("&");
+          for(let i = 0; i<strs.length; i++) {
+            let index = strs[i].indexOf("=")
+            obj[strs[i].slice(0, index)] = unescape(strs[i].slice(index + 1));
+          }
+          return obj;
+        }
       }
     })
   </script>
 </body>
+
 </html>
