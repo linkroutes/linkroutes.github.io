@@ -12,6 +12,7 @@
 - [能率电器](https://test.linkroutes.com/h5/nenglv)
 - [苏宁-2016里约奥运](https://test.linkroutes.com/h5/suning)
 - [小米对话H5](https://test.linkroutes.com/h5/xiaomi)
+- [三禾锅具](https://test.linkroutes.com/h5/sanhe)
 
 
 ## library

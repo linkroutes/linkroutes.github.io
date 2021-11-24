@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>听说你们又换老公了</title>
+  <meta name="description" content="Guo力max新男神即将诞生，快来看看他的真面目!"/>
+  <script>!function(a){var b,c;/Android (\d+\.\d+)/.test(navigator.userAgent)?(b=parseFloat(RegExp.$1),b>2.3?(c=parseInt(window.screen.width)/a,document.write('<meta name="viewport" content="width='+a+",minimum-scale="+c+",maximum-scale="+c+', target-densitydpi=device-dpi">')):document.write('<meta name="viewport" content="width='+a+',target-densitydpi=device-dpi">')):document.write('<meta name="viewport" content="width='+a+',user-scalable=no,target-densitydpi=device-dpi,minimal-ui">')}(640);</script>
+  <link rel="stylesheet" href="./all.css">
+  <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+  <div class="wxshare-wrap">
+    <img src="./images/wxshare.jpg" width="400" height="400">
+  </div>
+  <div class="music_wrap">
+    <audio id="Jbgm" src="./music/bgm.mp3?v=1" autoplay="true" loop="true"></audio>
+    <audio id="Mguy" src="./music/guy.mp3"></audio>
+    <audio id="Mcupon" src="./music/cupon.mp3"></audio>
+  </div>
+
+  <div class="doc">
+    <div class="m-loading" id="loading">
+      <div class="loading-data" id="JloadingTxt">0%</div>
+    </div>
+    <script>
+      var Pflag = 1;
+      $('body').on('touchstart', function(e){
+        if (Pflag) {
+          Jbgm.play();
+          Pflag = 0;
+        }
+      });
+      var picArr = [
+        "./images/a1-1.png",
+        "./images/p5-3-line.png",
+        "./images/a1-2.png",
+        "./images/p5-3-pop-bg@2x.png",
+        "./images/a2-1.png",
+        "./images/p5-3-pop-btn.png",
+        "./images/a2-2.png",
+        "./images/p5-3-pop-tit.png",
+        "./images/a3-1.png",
+        "./images/p5-3-pop-txt.png",
+        "./images/a3-2.png",
+        "./images/p5-3-pot.png",
+        "./images/a4-1.png",
+        "./images/p5-3-round.png",
+        "./images/a4-2.png",
+        "./images/p5-3-static-items@2x.png",
+        "./images/a5-1.png",
+        "./images/p5-3-txt.png",
+        "./images/a5-2.png",
+        "./images/p5-4-pop-bg.png",
+        "./images/a6-1.png",
+        "./images/p5-4-pop-bg@2x.png",
+        "./images/a6-2.png",
+        "./images/p5-4-pop-btn.png",
+        "./images/arr.png",
+        "./images/p5-4-pop-tit.png",
+        "./images/cupon-pop-bg@2x.png",
+        "./images/p5-4-pop-txt.png",
+        "./images/form-pop-bg@2x.png",
+        "./images/p5-4-pot.png",
+        "./images/form-pop-btn.png",
+        "./images/p5-4-round-4.png",
+        "./images/guy-pop-bg.png",
+        "./images/p5-4-round.png",
+        "./images/guy-pop-bg@2x.png",
+        "./images/p5-4-star.png",
+        "./images/guy-pop-food.png",
+        "./images/p5-4-static-items@2x.png",
+        "./images/guy-pop-pot.png",
+        "./images/p5-4-txt.png",
+        "./images/guy-pop-tit.png",
+        "./images/p5-4-wing.png",
+        "./images/hand.png",
+        "./images/p5-5-line.png",
+        "./images/intro-dot.png",
+        "./images/p5-5-pop-bg@2x.png",
+        "./images/logo.png",
+        "./images/p5-5-pop-btn.png",
+        "./images/p1-3line.png",
+        "./images/p5-5-pop-tit.png",
+        "./images/p1-blue-bar.png",
+        "./images/p5-5-pop-txt.png",
+        "./images/p1-static-items@2x.png",
+        "./images/p5-5-pot.png",
+        "./images/p1-tri.png",
+        "./images/p5-5-round.png",
+        "./images/p1-txt.png",
+        "./images/p5-5-static-items@2x.png",
+        "./images/p2-blue-bar.png",
+        "./images/p5-5-txt.png",
+        "./images/p2-blue-bar@2x.png",
+        "./images/p5-5-violin.png",
+        "./images/p2-static-items.png",
+        "./images/p5-6-a.png",
+        "./images/p2-static-items@2x.png",
+        "./images/p5-6-bar.png",
+        "./images/p2-tri.png",
+        "./images/p5-6-pop-bg@2x.png",
+        "./images/p2-txt-1.png",
+        "./images/p5-6-pop-btn1.png",
+        "./images/p2-txt-2.png",
+        "./images/p5-6-pop-btn2.png",
+        "./images/p2-txt-3.png",
+        "./images/p5-6-pop-tit.png",
+        "./images/p3-blue-bar.png",
+        "./images/p5-6-pop-txt.png",
+        "./images/p3-blue-bar@2x.png",
+        "./images/p5-6-pot.png",
+        "./images/p3-pot.png",
+        "./images/p5-6-q.png",
+        "./images/p3-static-items.png",
+        "./images/p5-6-static-items@2x.png",
+        "./images/p3-static-items@2x.png",
+        "./images/p5-7-blue-bar.png",
+        "./images/p3-tri.png",
+        "./images/p5-7-circle-b.png",
+        "./images/p3-txt-1.png",
+        "./images/p5-7-circle-s.png",
+        "./images/p3-txt-2.png",
+        "./images/p5-7-guy.png",
+        "./images/p4-cube.png",
+        "./images/p5-7-guy@2x.png",
+        "./images/p4-mask.png",
+        "./images/p5-7-red-bar.png",
+        "./images/p4-rule.png",
+        "./images/p5-7-red-bar@2x.png",
+        "./images/p4-static-items@2x.png",
+        "./images/p5-7-red-block.png",
+        "./images/p4-tags.png",
+        "./images/p5-7-red-block@2x.png",
+        "./images/p4-tit-1.png",
+        "./images/p5-7-static-items@2x.png",
+        "./images/p4-tit-2.png",
+        "./images/p5-7-txt1.png",
+        "./images/p5-1-bag.png",
+        "./images/p5-7-txt2.png",
+        "./images/p5-1-line.png",
+        "./images/p5-7-txt3.png",
+        "./images/p5-1-pop-bg@2x.png",
+        "./images/p5-8-static-items@2x.png",
+        "./images/p5-1-pop-btn.png",
+        "./images/p5-8-txt@2x.png",
+        "./images/p5-1-pop-tit.png",
+        "./images/p6-btn.png",
+        "./images/p5-1-pop-txt.png",
+        "./images/p6-circle-b.png",
+        "./images/p5-1-pot.png",
+        "./images/p6-circle-s.png",
+        "./images/p5-1-round.png",
+        "./images/p6-guy@2x.png",
+        "./images/p5-1-static-items@2x.png",
+        "./images/p6-red-bar.png",
+        "./images/p5-1-txt.png",
+        "./images/p6-red-bar@2x.png",
+        "./images/p5-2-book.png",
+        "./images/p6-static-items@2x.png",
+        "./images/p5-2-line.png",
+        "./images/p6-txt@2x.png",
+        "./images/p5-2-pop-bg@2x.png",
+        "./images/p7-bg@2x.png",
+        "./images/p5-2-pop-btn.png",
+        "./images/rule-close-btn.png",
+        "./images/p5-2-pop-tit.png",
+        "./images/rule-pop-bg.png",
+        "./images/p5-2-pop-txt.png",
+        "./images/rule-pop-bg@2x.png",
+        "./images/p5-2-pot.png",
+        "./images/rule-pop-btn.png",
+        "./images/p5-2-round.png",
+        "./images/rule-pop-tit.png",
+        "./images/p5-2-static-items@2x.png",
+        "./images/rule-pop-txt.png",
+        "./images/p5-2-txt.png",
+        "./images/tips.png",
+        "./images/p5-3-crown.png",
+        "./images/wxshare.jpg"
+      ];
+      $.extend({
+          preLoad:function(n, o, e) {
+              function t(o) {
+                  var c = new Image();
+                  c.onload = function() {
+                      i += 1, e((100 * i / r).toFixed(0));
+                      var o = n.shift();
+                      o && t(o);
+                  }, c.src = o;
+              }
+              var i = 0, r = n.length;
+              return r ? void n.slice(i, i + o).forEach(function() {
+                  t(n.shift());
+              }) :e(100);
+          }
+      });
+      var loadFlag = 1, _picArr = picArr.concat([]) ,$loading = $("#loading"), $JloadingTxt=$('#JloadingTxt');
+      $.preLoad(_picArr, 3, function(percent) {
+        $JloadingTxt.html(percent + "%");
+        if (100 == percent && loadFlag ) {
+          loadFlag = 0;
+          setTimeout(function(){
+            $loading.fadeOut(1e3, function() {
+                $loading.remove();
+                $('.arr').show();
+                $('.P1').addClass('active');
+            })
+          },1000)
+        }
+      });
+    </script>
+    <div class="logo">
+      <img src="./images/logo.png">
+    </div>
+    <div class="arr">
+      <img src="./images/arr.png">
+    </div>
+    <div class="swiper-container" id="Jswipe">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide P1">
+          <div class="page page1">
+            <div class="p1-blue-bar"><img src="./images/p1-blue-bar.png"></div>
+            <div class="p1-3line"><img src="./images/p1-3line.png"></div>
+            <div class="p1-tri"><img src="./images/p1-tri.png"></div>
+            <div class="p1-txt"><img src="./images/p1-txt.png"></div>
+            <div class="p1-static-items"><img src="./images/p1-static-items@2x.png"></div>
+          </div>
+        </div>
+        <div class="swiper-slide P2">
+          <div class="page page2">
+            <div class="p2-blue-bar"><img src="./images/p2-blue-bar.png"></div>
+            <div class="p2-static-items"><img src="./images/p2-static-items.png"></div>
+            <div class="p2-tri"><img src="./images/p2-tri.png"></div>
+            <div class="p2-txt-1"><img src="./images/p2-txt-1.png"></div>
+            <div class="p2-txt-2"><img src="./images/p2-txt-2.png"></div>
+            <div class="p2-txt-3"><img src="./images/p2-txt-3.png"></div>
+          </div>
+        </div>
+        <div class="swiper-slide P3">
+          <div class="page page3">
+            <div class="p3-blue-bar"><img src="./images/p3-blue-bar.png"></div>
+            <div class="p3-static-items"><img src="./images/p3-static-items@2x.png"></div>
+            <div class="p3-pot"><img src="./images/p3-pot.png"></div>
+            <div class="p3-tri"><img src="./images/p3-tri.png"></div>
+            <div class="p3-txt-1"><img src="./images/p3-txt-1.png"></div>
+            <div class="p3-txt-2"><img src="./images/p3-txt-2.png"></div>
+          </div>
+        </div>
+        <div class="swiper-slide P4">
+          <div class="page page4">
+            <div class="p4-static-items"><img src="./images/p4-static-items@2x.png"></div>
+            <div class="p4-tit-2"><img src="./images/p4-tit-2.png"></div>
+            <div class="p4-tit-1"><img src="./images/p4-tit-1.png"></div>
+            <div class="p4-rule"><img src="./images/p4-rule.png"></div>
+            <div class="p4-cube"><img src="./images/p4-cube.png"></div>
+            <div class="p4-tags"><img src="./images/p4-tags.png"></div>
+            <div class="p4-mask"><img src="./images/p4-mask.png"></div>
+          </div>
+        </div>
+        <div class="swiper-slide P5">
+          <div class="page page5">
+            <div class="p5 p5-1">
+              <div class="p5-1-static-items"><img src="./images/p5-1-static-items@2x.png"></div>
+              <!-- hide -->
+              <div class="p5-1-txt"><img src="./images/p5-1-txt.png"></div>
+              <div class="p5-1-round"><img src="./images/p5-1-round.png"></div>
+              <div class="p5-1-line"><img src="./images/p5-1-line.png"></div>
+              <div class="p5-1-bag"><img src="./images/p5-1-bag.png"></div>
+              <div class="p5-1-pot"><img src="./images/p5-1-pot.png"></div>
+              <div class="a1 a1-1" id="Ja1-1"><img src="./images/a1-1.png"></div>
+              <div class="a1 a1-2" id="Ja1-2"><img src="./images/a1-2.png"></div>
+            </div>
+            <div class="p5 p5-2">
+              <div class="p5-2-static-items"><img src="./images/p5-2-static-items@2x.png"></div>
+              <div class="p5-2-txt"><img src="./images/p5-2-txt.png"></div>
+              <div class="p5-2-pot"><img src="./images/p5-2-pot.png"></div>
+              <div class="p5-2-round"><img src="./images/p5-2-round.png"></div>
+              <div class="p5-2-line"><img src="./images/p5-2-line.png"></div>
+              <div class="p5-2-book"><img src="./images/p5-2-book.png"></div>
+              <div class="a2 a2-1" id="Ja2-1"><img src="./images/a2-1.png"></div>
+              <div class="a2 a2-2" id="Ja2-2"><img src="./images/a2-2.png"></div>
+            </div>
+            <div class="p5 p5-3">
+              <div class="p5-3-static-items"><img src="./images/p5-3-static-items@2x.png"></div>
+              <div class="p5-3-txt"><img src="./images/p5-3-txt.png"></div>
+              <div class="p5-3-pot"><img src="./images/p5-3-pot.png"></div>
+              <div class="p5-3-round"><img src="./images/p5-3-round.png"></div>
+              <div class="p5-3-line"><img src="./images/p5-3-line.png"></div>
+              <div class="p5-3-crown"><img src="./images/p5-3-crown.png"></div>
+              <div class="a3 a3-1" id="Ja3-1"><img src="./images/a3-1.png"></div>
+              <div class="a3 a3-2" id="Ja3-2"><img src="./images/a3-2.png"></div>
+            </div>
+            <div class="p5 p5-4">
+              <div class="p5-4-static-items"><img src="./images/p5-4-static-items@2x.png"></div>
+              <div class="p5-4-txt"><img src="./images/p5-4-txt.png"></div>
+              <div class="p5-4-pot"><img src="./images/p5-4-pot.png"></div>
+              <div class="p5-4-round"><img src="./images/p5-4-round.png"></div>
+              <div class="p5-4-wing"><img src="./images/p5-4-wing.png"></div>
+              <div class="p5-4-round-4"><img src="./images/p5-4-round-4.png"></div>
+              <div class="p5-4-star"><img src="./images/p5-4-star.png"></div>
+              <div class="a4 a4-1" id="Ja4-1"><img src="./images/a4-1.png"></div>
+              <div class="a4 a4-2" id="Ja4-2"><img src="./images/a4-2.png"></div>
+            </div>
+            <div class="p5 p5-5">
+              <div class="p5-5-static-items"><img src="./images/p5-5-static-items@2x.png"></div>
+              <div class="p5-5-round"><img src="./images/p5-5-round.png"></div>
+              <div class="p5-5-line"><img src="./images/p5-5-line.png"></div>
+              <div class="p5-5-violin"><img src="./images/p5-5-violin.png"></div>
+              <div class="p5-5-txt"><img src="./images/p5-5-txt.png"></div>
+              <div class="p5-5-pot"><img src="./images/p5-5-pot.png"></div>
+              <div class="a5 a5-1" id="Ja5-1"><img src="./images/a5-1.png"></div>
+              <div class="a5 a5-2" id="Ja5-2"><img src="./images/a5-2.png"></div>
+            </div>
+            <div class="p5 p5-6">
+              <div class="p5-6-static-items"><img src="./images/p5-6-static-items@2x.png"></div>
+              <div class="p5-6-pot"><img src="./images/p5-6-pot.png"></div>
+              <div class="p5-6-bar"><img src="./images/p5-6-bar.png"></div>
+              <div class="p5-6-a"><img src="./images/p5-6-a.png"></div>
+              <div class="p5-6-q"><img src="./images/p5-6-q.png"></div>
+              <div class="a6 a6-1" id="Ja6-1"><img src="./images/a6-1.png"></div>
+              <div class="a6 a6-2" id="Ja6-2"><img src="./images/a6-2.png"></div>
+            </div>
+            <div class="p5 p5-7">
+              <div class="p5-7-static-items"><img src="./images/p5-7-static-items@2x.png"></div>
+              <div class="p5-7-circle-s"><img src="./images/p5-7-circle-s.png"></div>
+              <div class="p5-7-circle-b"><img src="./images/p5-7-circle-b.png"></div>
+              <div class="p5-7-red-bar"><img src="./images/p5-7-red-bar.png"></div>
+              <div class="p5-7-guy">
+                <i class="intro-dot" id="Jintro1"></i>
+                <i class="intro-txt1">戳我戳我</i>
+                <img src="./images/p5-7-guy.png">
+              </div>
+              <div class="p5-7-red-block"><img src="./images/p5-7-red-block.png"></div>
+              <div class="p5-7-txt3"><img src="./images/p5-7-txt3.png"></div>
+              <div class="p5-7-txt2"><img src="./images/p5-7-txt2.png"></div>
+              <div class="p5-7-txt1"><img src="./images/p5-7-txt1.png"></div>
+              <div class="p5-7-blue-bar"><img src="./images/p5-7-blue-bar.png"></div>
+            </div>
+            <div class="p5 p5-8">
+              <div class="p5-8-static-items"><img src="./images/p5-8-static-items@2x.png"></div>
+              <i class="intro-dot" id="Jintro2"></i>
+              <i class="intro-txt2">戳我戳我</i>
+              <div class="p5-8-txt"><img src="./images/p5-8-txt@2x.png"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide P6">
+          <div class="page page6">
+            <div class="p6-static-items"><img src="./images/p6-static-items@2x.png"></div>
+            <div class="p6-circle-b"><img src="./images/p6-circle-b.png"></div>
+            <div class="p6-circle-s"><img src="./images/p6-circle-s.png"></div>
+            <div class="p6-red-bar"><img src="./images/p6-red-bar.png"></div>
+            <div class="p6-guy"><img src="./images/p6-guy@2x.png"></div>
+            <div class="p6-txt"><img src="./images/p6-txt@2x.png"></div>
+            <div class="p6-btn" id="JgetCoupon"><img src="./images/p6-btn.png"></div>
+            <!-- cupon-pop -->
+            <div class="pop-wrap cupon-pop-wrap">
+              <div class="pop cupon-pop">
+                <div class="cupon-pop-bg"><img src="./images/cupon-pop-bg@2x.png"></div>
+                <div class="hand"><img src="./images/hand.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide  P7">
+          <div class="page page7">
+            <div class="p7-bg"><img src="./images/p7-bg@2x.png" alt=""></div>
+            <img src="./images/tips.png" class="tips">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pop-wrap rule-pop-wrap">
+    <div class="pop rule-pop">
+      <div class="rule-pop-bg"><img src="./images/rule-pop-bg@2x.png"></div>
+      <div class="rule-close-btn" id="Jclose-pop"><img src="./images/rule-close-btn.png"></div>
+      <div class="rule-pop-tit"><img src="./images/rule-pop-tit.png"></div>
+      <div class="rule-pop-txt"><img src="./images/rule-pop-txt.png"></div>
+      <div class="rule-pop-btn" id="Jclose-pop2"><img src="./images/rule-pop-btn.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap p5-1-pop-wrap">
+    <div class="pop p5-1-pop">
+      <div class="p5-1-pop-bg"><img src="./images/p5-1-pop-bg@2x.png"></div>
+      <div class="p5-1-pop-txt"><img src="./images/p5-1-pop-txt.png"></div>
+      <div class="p5-1-pop-btn"><img src="./images/p5-1-pop-btn.png"></div>
+      <div class="p5-1-pop-tit"><img src="./images/p5-1-pop-tit.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap p5-2-pop-wrap">
+    <div class="pop p5-2-pop">
+      <div class="p5-2-pop-bg"><img src="./images/p5-2-pop-bg@2x.png"></div>
+      <div class="p5-2-pop-tit"><img src="./images/p5-2-pop-tit.png"></div>
+      <div class="p5-2-pop-txt"><img src="./images/p5-2-pop-txt.png"></div>
+      <div class="p5-2-pop-btn"><img src="./images/p5-2-pop-btn.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap p5-3-pop-wrap">
+    <div class="pop p5-3-pop">
+      <div class="p5-3-pop-bg"><img src="./images/p5-3-pop-bg@2x.png"></div>
+      <div class="p5-3-pop-tit"><img src="./images/p5-3-pop-tit.png"></div>
+      <div class="p5-3-pop-btn"><img src="./images/p5-3-pop-btn.png"></div>
+      <div class="p5-3-pop-txt"><img src="./images/p5-3-pop-txt.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap p5-4-pop-wrap">
+    <div class="pop p5-4-pop">
+      <div class="p5-4-pop-bg"><img src="./images/p5-4-pop-bg@2x.png"></div>
+      <div class="p5-4-pop-tit"><img src="./images/p5-4-pop-tit.png"></div>
+      <div class="p5-4-pop-txt"><img src="./images/p5-4-pop-txt.png"></div>
+      <div class="p5-4-pop-btn"><img src="./images/p5-4-pop-btn.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap p5-5-pop-wrap">
+    <div class="pop p5-5-pop">
+      <div class="p5-5-pop-bg"><img src="./images/p5-5-pop-bg@2x.png"></div>
+      <div class="p5-5-pop-tit"><img src="./images/p5-5-pop-tit.png"></div>
+      <div class="p5-5-pop-txt"><img src="./images/p5-5-pop-txt.png"></div>
+      <div class="p5-5-pop-btn"><img src="./images/p5-5-pop-btn.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap p5-6-pop-wrap">
+    <div class="pop p5-6-pop">
+      <div class="p5-6-pop-bg"><img src="./images/p5-6-pop-bg@2x.png"></div>
+      <div class="p5-6-pop-tit"><img src="./images/p5-6-pop-tit.png"></div>
+      <div class="p5-6-pop-txt"><img src="./images/p5-6-pop-txt.png"></div>
+      <div class="p5-6-pop-btn1"><img src="./images/p5-6-pop-btn1.png"></div>
+      <div class="p5-6-pop-btn2"><img src="./images/p5-6-pop-btn2.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap guy-pop-wrap">
+    <div class="pop guy-pop">
+      <div class="guy-pop-bg"><img src="./images/guy-pop-bg@2x.png"></div>
+      <div class="guy-pop-food"><img src="./images/guy-pop-food.png"></div>
+      <div class="guy-pop-pot"><img src="./images/guy-pop-pot.png"></div>
+      <div class="guy-pop-tit"><img src="./images/guy-pop-tit.png"></div>
+      <div class="rule-close-btn" id="Jguy-close-pop"><img src="./images/rule-close-btn.png"></div>
+    </div>
+  </div>
+  <div class="pop-wrap form-pop-wrap">
+    <div class="pop form-pop">
+      <div class="form-pop-bg">
+        <img src="./images/form-pop-bg@2x.png">
+      </div>
+      <form class="form">
+        <div class="user-wrap">
+          <input type="text" id="Jname" class="ipt" placeholder="请填写您的姓名">
+        </div>
+        <div class="tel-wrap">
+          <input type="text" id="Jtel" class="ipt" placeholder="请填写您的手机号码">
+        </div>
+      </form>
+      <a class="form-pop-btn" id="Jsbm"><img src="./images/form-pop-btn.png"></a>
+    </div>
+  </div>
+  <script>
+    var INTF = 'http://www.chinasanho.com/chinasanho/Index/add_user';
+  </script>
+  <script src="./lib/swiper3.0.6.min.js"></script>
+  <script src="./index.js"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <!-- <script id="DS_PRE_JS" src="http://cdn.datastory.com.cn/js/pre-ds-min.js?dsTid=95d8bed4-c7de-4598-9290-f7b1e2e13385"></script> -->
+  <script>
+    // $.ajax({
+    //   type:'get',
+    //   url:"/chinasanho/Index/share",
+    //   data:{url:window.location.href},
+    //   success: function(data){
+    //     wx.config({
+    //       debug: false,
+    //       appId: data.appId,
+    //       timestamp: data.timestamp,
+    //       nonceStr: data.nonceStr,
+    //       signature: data.signature,
+    //       jsApiList: [
+    //       'checkJsApi',
+    //       'onMenuShareTimeline',
+    //       'onMenuShareAppMessage',
+    //       'onMenuShareQQ',
+    //       'onMenuShareWeibo',
+    //       'hideMenuItems',
+    //       'chooseImage'
+    //       ]
+    //     });
+    //     wx.ready(function(){
+    //       DS.ready(function () {
+    //         var shareLink = "./index.html";
+    //         wx.onMenuShareTimeline({
+    //           title: '听说你们又换老公了',
+    //           desc: '继仲基欧巴敏镐老公后又有一个Guo力十足的老公上线',
+    //           link: DS.linkChange(shareLink),
+    //           imgUrl: './images/wxshare.jpg',
+    //           success: function () {
+    //             DS.sendRepost("timeline");
+    //           },
+    //           cancel: function () {
+    //           }
+    //         });
+    //         wx.onMenuShareAppMessage({
+    //           title: '听说你们又换老公了',
+    //           desc: '继仲基欧巴敏镐老公后又有一个Guo力十足的老公上线',
+    //           link: DS.linkChange(shareLink),
+    //           imgUrl: './images/wxshare.jpg',
+    //           success: function () {
+    //             DS.sendRepost("appMessage");
+    //           },
+    //           cancel: function () {
+    //           }
+    //         });
+    //       });
+    //     });
+    //   }
+    // });
+  </script>
+</script>
+</body>
+</html>

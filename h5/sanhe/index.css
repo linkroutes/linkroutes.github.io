@@ -1,0 +1,429 @@
+
+
+/* arr */
+
+.doc {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #000;
+  height: 100%;
+  position: relative;
+}
+.doc, .swiper-slide, .m-loading {
+  background: #FCFCFC;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.m-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 110;
+  width: 100%;
+}
+.loading-data {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 225px;
+  height: 54px;
+  color: #D90206;
+  font-size: 50px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.arr {
+  position: absolute;
+  width: 111px;
+  height: 56px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -56px;
+  z-index: 100;
+  display: none;
+  -webkit-animation: arr 1.5s linear 0s infinite forwards;
+  -o-animation: arr 1.5s linear 0s infinite forwards;
+  animation: arr 1.5s linear 0s infinite forwards;
+}
+.logo {
+  position: absolute;
+  width: 103px;
+  height: 105px;
+  top: 32px;
+  left: 38px;
+  z-index: 120;
+}
+/* 第一页 */
+.p1-static-items {
+  position: absolute;
+  width: 1255px;
+  height: 1413px;
+  z-index: 0;
+  top: -128px;
+}
+.p1-blue-bar {
+  position: absolute;
+  width: 1168px;
+  height: 354px;
+  top: 553px;
+  left: 0;
+  z-index: 0;
+  right: 0;
+}
+.p1-3line {
+  position: absolute;
+  width: 369px;
+  height: 322px;
+  top: 569px;
+  left: 20px;
+  z-index: 20;
+  opacity: 0;
+}
+.active .p1-3line{
+  -webkit-animation: p1-tri 1s ease .5s 1 forwards ;
+  -o-animation: p1-tri 1s ease .5s 1 forwards ;
+  animation: p1-tri 1s ease .5s 1 forwards ;
+}
+.p1-tri {
+  position: absolute;
+  width: 523px;
+  height: 537px;
+  top: 263px;
+  left: 91px;
+  z-index: 10;
+  opacity: 0;
+}
+.active .p1-tri{
+  -webkit-animation: p1-tri 1s ease 0s 1 forwards ;
+  -o-animation: p1-tri 1s ease 0s 1 forwards ;
+  animation: p1-tri 1s ease 0s 1 forwards ;
+}
+.p1-txt {
+  position: absolute;
+  width: 362px;
+  height: 206px;
+  top: 410px;
+  left: 153px;
+  z-index: 20;
+  opacity: 0;
+}
+.active .p1-txt{
+  -webkit-animation: p1-txt 1s ease 0s 1 forwards ;
+  -o-animation: p1-txt 1s ease 0s 1 forwards ;
+  animation: p1-txt 1s ease 0s 1 forwards ;
+}
+
+/* page2 */
+
+.p2-blue-bar {
+  position: absolute;
+  width: 1146px;
+  height: 639px;
+  top: 457px;
+  left: -283px;
+  z-index: 0;
+}
+.p2-static-items {
+  position: absolute;
+  width: 1231px;
+  height: 1492px;
+  top: -410px;
+  left: -257px;
+  z-index: 0;
+}
+.p2-tri {
+  position: absolute;
+  width: 520px;
+  height: 539px;
+  top: 190px;
+  left: 40px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p2-tri{
+  -webkit-animation: p2-tri 1.6s ease 0s 1 forwards ;
+  -o-animation: p2-tri 1.6s ease 0s 1 forwards ;
+  animation: p2-tri 1.6s ease 0s 1 forwards ;
+}
+.p2-txt-1 {
+  position: absolute;
+  width: 190px;
+  height: 165px;
+  top: 259px;
+  left: 298px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p2-txt-1{
+  -webkit-animation: p2-txt-1 1s ease  1.2s 1 forwards ;
+  -o-animation: p2-txt-1 1s ease  1.2s 1 forwards ;
+  animation: p2-txt-1 1s ease  1.2s 1 forwards ;
+}
+.p2-txt-2 {
+  position: absolute;
+  width: 265px;
+  height: 200px;
+  top: 390px;
+  left: 237px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p2-txt-2{
+  -webkit-animation: p2-txt-2 1s ease  1.2s 1 forwards ;
+  -o-animation: p2-txt-2 1s ease  1.2s 1 forwards ;
+  animation: p2-txt-2 1s ease  1.2s 1 forwards ;
+}
+.p2-txt-3 {
+  position: absolute;
+  width: 420px;
+  height: 169px;
+  top: 512px;
+  left: 103px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p2-txt-3{
+  -webkit-animation: p2-txt-3 1s ease  1.2s 1 forwards ;
+  -o-animation: p2-txt-3 1s ease  1.2s 1 forwards ;
+  animation: p2-txt-3 1s ease  1.2s 1 forwards ;
+}
+/* page3 */
+.p3-blue-bar {
+  position: absolute;
+  width: 1118px;
+  height: 487px;
+  top: 437px;
+  left: -247px;
+  z-index: 0;
+}
+.p3-static-items {
+  position: absolute;
+  width: 640px;
+  height: 1136px;
+  top: -128px;
+  left: 0px;
+  z-index: 0;
+}
+.p3-pot {
+  position: absolute;
+  width: 418px;
+  height: 290px;
+  top: -99px;
+  left: 216px;
+  z-index: 0;
+}
+.p3-tri {
+  position: absolute;
+  width: 509px;
+  height: 545px;
+  top: 217px;
+  left: 115px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p3-tri{
+  -webkit-animation: p3-tri 1s ease  0s 1 forwards ;
+  -o-animation: p3-tri 1s ease  0s 1 forwards ;
+  animation: p3-tri 1s ease  0s 1 forwards ;
+}
+.p3-txt-1 {
+  position: absolute;
+  width: 333px;
+  height: 278px;
+  top: 350px;
+  left: 170px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p3-txt-1{
+  -webkit-animation: p3-txt-1 1s ease  .5s 1 forwards ;
+  -o-animation: p3-txt-1 1s ease  .5s 1 forwards ;
+  animation: p3-txt-1 1s ease  .5s 1 forwards ;
+}
+.p3-txt-2 {
+  position: absolute;
+  width: 413px;
+  height: 90px;
+  top: 820px;
+  left: 111px;
+  z-index: 0;
+}
+.p3-txt-2{
+  -webkit-animation: p3-txt-2 1s linear 0s infinite ;
+  -o-animation: p3-txt-2 1s linear 0s infinite ;
+  animation: p3-txt-2 1s linear 0s infinite ;
+}
+/* page4 */
+.p4-static-items {
+  position: absolute;
+  width: 640px;
+  top: -128px;
+  left: 0px;
+  z-index: 0;
+}
+.p4-tit-2 {
+  position: absolute;
+  width: 575px;
+  height: 183px;
+  top: 190px;
+  left: 33px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p4-tit-2{
+  -webkit-animation: p4-tit-2 1s ease  .5s 1 forwards ;
+  -o-animation: p4-tit-2 1s ease  .5s 1 forwards ;
+  animation: p4-tit-2 1s ease  .5s 1 forwards ;
+}
+.p4-tit-1 {
+  position: absolute;
+  width: 238px;
+  height: 71px;
+  top: 149px;
+  left: 201px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p4-tit-1{
+  -webkit-animation: p4-tit-1 1s ease  .5s 1 forwards ;
+  -o-animation: p4-tit-1 1s ease  .5s 1 forwards ;
+  animation: p4-tit-1 1s ease  .5s 1 forwards ;
+}
+.p4-rule {
+  position: absolute;
+  width: 229px;
+  height: 106px;
+  top: 303px;
+  left: 446px;
+  z-index: 0;
+}
+.p4-rule{
+  -webkit-animation: p4-rule 1s linear 0s infinite ;
+  -o-animation: p4-rule 1s linear 0s infinite ;
+  animation: p4-rule 1s linear 0s infinite ;
+}
+
+.p4-cube {
+  position: absolute;
+  width: 550px;
+  height: 520px;
+  top: 446px;
+  left: 54px;
+  z-index: 0;
+  opacity: 0;
+}
+.p4-tags {
+  position: absolute;
+  width: 524px;
+  height: 519px;
+  top: 388px;
+  left: 93px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.p4-mask {
+  position: absolute;
+  width: 233px;
+  height: 293px;
+  top: 596px;
+  left: 256px;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p4-cube,.active .p4-tags,.active .p4-mask{
+  -webkit-animation: fadeIn 1s linear 0s 1 forwards ;
+  -o-animation: fadeIn 1s linear 0s 1 forwards ;
+  animation: fadeIn 1s linear 0s 1 forwards ;
+}
+
+/* p6 */
+.p6-static-items {
+  position: absolute;
+  height: 1082px;
+  top: -66px;
+  z-index: 0;
+  width: 640px;
+  left: 0;
+}
+.p6-circle-b {
+  position: absolute;
+  width: 423px;
+  height: 423px;
+  top: 154px;
+  left: -101px;
+  z-index: 0;
+  -webkit-animation:reverseRotataZ2 2s linear infinite;
+}
+.p6-circle-s {
+  position: absolute;
+  width: 274px;
+  height: 275px;
+  top: 224px;
+  left: -35px;
+  z-index: 0;
+  -webkit-animation:reverseRotataZ 2s linear infinite;
+}
+.p6-red-bar {
+  position: absolute;
+  width: 1231px;
+  height: 271px;
+  top: 384px;
+  left: -638px;
+  z-index: 0;
+}
+.p6-guy {
+  position: absolute;
+  width: 572px;
+  top: 14px;
+  left: 32px;
+  z-index: 0;
+}
+.p6-txt {
+  position: absolute;
+  width: 640px;
+  top: 315px;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+}
+.active .p6-txt{
+  -o-animation: rule-pop-tit 1s ease 0s 1 forwards;
+  -webkit-animation: rule-pop-tit 1s ease 0s 1 forwards;
+}
+.p6-btn {
+  position: absolute;
+  width: 415px;
+  height: 112px;
+  top: 820px;
+  left: 272px;
+  z-index: 0;
+}
+.active .p6-btn{
+  -webkit-animation: bigSmall2 1.5s linear 0s infinite ;
+  -o-animation: bigSmall2 1.5s linear 0s infinite ;
+  animation: bigSmall2 1.5s linear 0s infinite ;
+}
+/* p7 */
+.p7-bg{
+  width: 640px;
+  height: 1008px;
+}
+.tips{
+  width: 258px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.tips{
+  -webkit-animation: upDown 1s linear 0s infinite ;
+  -o-animation: upDown 1s linear 0s infinite ;
+  animation: upDown 1s linear 0s infinite ;
+}
