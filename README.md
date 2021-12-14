@@ -17,3 +17,4 @@
 
 ## library
 - [animate.css](https://test.linkroutes.com/lib/animate)
+- [html2canvas](https://www.jsdelivr.com/package/npm/html2canvas) // 1.0.0版本没有字体漂移bug, 推荐优先优先使用
