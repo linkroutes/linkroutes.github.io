@@ -27,5 +27,5 @@
 
 > 写简单页面时,尽量用以下 CDN 资源, 如 axios, vue 的引用
 
-- [jsdelivr](https://www.jsdelivr.com/) // npm 关联 cdn, 优先使用
-- [bootcdn](https://www.bootcdn.cn/)
+- [jsdelivr](https://www.jsdelivr.com/)  // npm 关联 cdn, 文件全，个人开发可用，如对外展示，可换成bootcdn
+- [bootcdn](https://www.bootcdn.cn/)  // 境内CDN，速度快
