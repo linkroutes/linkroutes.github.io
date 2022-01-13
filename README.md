@@ -28,3 +28,6 @@
 - [苏宁-2016 里约奥运](https://test.linkroutes.com/h5/suning)
 - [小米对话 H5](https://test.linkroutes.com/h5/xiaomi)
 - [三禾锅具](https://test.linkroutes.com/h5/sanhe) -->
+
+## 测试页面
+- 测试微信sdk等：https://test.linkroutes.com/idx.html
