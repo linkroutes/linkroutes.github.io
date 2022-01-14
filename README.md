@@ -31,3 +31,6 @@
 
 ## 测试页面
 - 测试微信sdk等：https://test.linkroutes.com/idx.html
+
+## 研究
+- https://www.npmjs.com/package/howler
