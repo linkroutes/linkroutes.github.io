@@ -34,3 +34,6 @@
 
 ## 研究
 - https://www.npmjs.com/package/howler
+- https://thinkpixellab.com/pxloader/ 比createjs.loadqueue快
+
+<!-- ## H5
