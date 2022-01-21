@@ -1,7 +1,7 @@
 ## 常用资源
 - [音效素材](https://www.tukuppt.com/yinxiao/)
 - [免费商用音乐](https://freepd.com/)
-- [七牛token](https://wx.linkroutes.com/qiniu/token.php)
+- [七牛token](https://github.com/linkroutes/qiniu-token)
 
 ## library
 
