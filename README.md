@@ -5,7 +5,7 @@
 
 ## library
 
-- [animate.css](https://test.linkroutes.com/lib/animate)
+- [animate.css](https://test.linkroutes.com/lib/animate) // 用这个引用地址： https://www1.pcauto.com.cn/test/gz/cdc/lib/css/animate.css
 - [html2canvas](https://www.jsdelivr.com/package/npm/html2canvas) // 1.0.0 版本没有字体漂移 bug, 推荐优先优先使用
 
 ## CDN
