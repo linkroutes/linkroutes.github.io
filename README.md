@@ -5,7 +5,7 @@
 
 ## library
 
-- [animate.css](https://test.linkroutes.com/lib/animate) // 用这个引用地址： https://www1.pcauto.com.cn/test/gz/cdc/lib/css/animate.css
+- [animate.css](https://test.linkroutes.com/lib/animate) // 资源引用地址： [https://js.3conline.com/krpano/lib/animate.css](https://js.3conline.com/krpano/lib/animate.css)
 - [html2canvas](https://www.jsdelivr.com/package/npm/html2canvas) // 1.0.0 版本没有字体漂移 bug, 推荐优先优先使用
 
 ## CDN
@@ -35,4 +35,6 @@
 
 ## 研究
 - https://www.npmjs.com/package/howler
-- https://thinkpixellab.com/pxloader/ 比createjs.loadqueue快
+- https://thinkpixellab.com/pxloader/
+  - [https://js.3conline.com/krpano/lib/PxLoader.js](https://js.3conline.com/krpano/lib/PxLoader.js)
+  - [https://js.3conline.com/krpano/lib/PxLoaderImage.js](https://js.3conline.com/krpano/lib/PxLoaderImage.js)
