@@ -3,6 +3,7 @@
 - [免费商用音乐](https://freepd.com/)
 - [七牛token](https://github.com/linkroutes/qiniu-token)
 - [芝麻小程序-小程序太阳码的生成](https://weixin.hotapp.cn)
+- [图标icon](https://www.iconfont.cn)
 
 ## library
 
