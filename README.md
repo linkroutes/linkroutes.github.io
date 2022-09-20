@@ -2,6 +2,7 @@
 - [音效素材](https://www.tukuppt.com/yinxiao/)
 - [免费商用音乐](https://freepd.com/)
 - [七牛token](https://github.com/linkroutes/qiniu-token)
+- [芝麻小程序-小程序太阳码的生成](https://weixin.hotapp.cn)
 
 ## library
 
@@ -29,6 +30,8 @@
 - [苏宁-2016 里约奥运](https://test.linkroutes.com/h5/suning)
 - [小米对话 H5](https://test.linkroutes.com/h5/xiaomi)
 - [三禾锅具](https://test.linkroutes.com/h5/sanhe) -->
+
+- [H5跳小程序](https://csbj.linkroutes.com/2022/dongchenghuih5/index.html)
 
 ## 测试页面
 - 测试微信sdk等：https://test.linkroutes.com/idx.html
