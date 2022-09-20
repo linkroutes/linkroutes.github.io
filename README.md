@@ -31,10 +31,11 @@
 - [小米对话 H5](https://test.linkroutes.com/h5/xiaomi)
 - [三禾锅具](https://test.linkroutes.com/h5/sanhe) -->
 
-- [H5跳小程序](https://csbj.linkroutes.com/2022/dongchenghuih5/index.html)
+
 
 ## 测试页面
 - 测试微信sdk等：https://test.linkroutes.com/idx.html
+- [H5跳小程序](https://csbj.linkroutes.com/2022/dongchenghuih5/index.html)
 
 ## 研究
 - https://www.npmjs.com/package/howler
