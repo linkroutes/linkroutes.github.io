@@ -8,7 +8,7 @@
 ## library
 
 - [animate.css](https://test.linkroutes.com/lib/animate) // 资源引用地址： [https://js.3conline.com/krpano/lib/animate.css](https://js.3conline.com/krpano/lib/animate.css)
-- [html2canvas](https://www.jsdelivr.com/package/npm/html2canvas) // 1.0.0 版本没有字体漂移 bug, 推荐优先优先使用
+- [html2canvas](https://www.jsdelivr.com/package/npm/html2canvas) // 1.0.0 版本没有字体漂移 bug, 推荐优先优先使用 https://js.3conline.com/krpano/lib/html2canvas.min.js
 
 ## CDN
 
@@ -36,7 +36,7 @@
 
 ## 测试页面
 - 测试微信sdk等：https://test.linkroutes.com/idx.html
-- H5跳小程序：https://csbj.linkroutes.com/2022/dongchenghuih5/index.html
+- H5跳小程序：https://csbj.linkroutes.com/2022/dongchenghuih5/index.html // 需要传参appid
 
 ## 研究
 - https://www.npmjs.com/package/howler
