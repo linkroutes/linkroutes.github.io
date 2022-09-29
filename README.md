@@ -8,11 +8,11 @@
 ## library
 
 - [animate.css](https://test.linkroutes.com/lib/animate) // 资源引用地址： [https://js.3conline.com/krpano/lib/animate.css](https://js.3conline.com/krpano/lib/animate.css)
-- [html2canvas](https://www.jsdelivr.com/package/npm/html2canvas) // 1.0.0 版本没有字体漂移 bug, 推荐优先优先使用 https://js.3conline.com/krpano/lib/html2canvas.min.js
+- [html2canvas](https://www.jsdelivr.com/package/npm/html2canvas) // 1.0.0 版本没有字体漂移 bug, 推荐优先优先使用 [https://js.3conline.com/krpano/lib/html2canvas.min.js](https://js.3conline.com/krpano/lib/html2canvas.min.js)
 
 ## CDN
 
-> 写简单页面时,尽量用以下 CDN 资源, 如 axios, vue 的引用
+> 写简单页面时,尽量用以下 CDN 资源, 如 axios, vue 的引用, 正式上线的时候，把资源下载到本地，或者传到CDN 
 
 - [jsdelivr](https://www.jsdelivr.com/)  // npm 关联 cdn, 文件全，个人开发可用，如对外展示，可换成bootcdn
 - [bootcdn](https://www.bootcdn.cn/)  // 境内CDN，速度快
