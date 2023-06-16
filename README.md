@@ -4,6 +4,7 @@
 - [七牛token](https://github.com/linkroutes/qiniu-token)
 - [芝麻小程序-小程序太阳码的生成](https://weixin.hotapp.cn)
 - [图标icon](https://www.iconfont.cn)
+- [免费商用字体](https://wordshub.github.io/free-font/) , github仓库:https://github.com/wordshub/free-font
 
 ## library
 
